@@ -1,0 +1,615 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	overflow:inherit;
+	text-decoration:none !important;
+}
+.quieto{
+	overflow: hidden;
+}
+.quieto2{
+	overflow: hidden !important;
+}
+.e{
+	text-align: center;
+	position: fixed;
+	z-index: 3;
+}
+.finicio{
+	background-image: url(../img/p1970.jpg);
+	background-size: cover;
+}
+.B1{
+	width: 22px;
+	background-color: red;
+	height: 22px;
+	border-radius: 100%;
+	margin-left:48%;
+	position: absolute;
+}
+.ar{
+	top: 0;
+}
+.ab{
+	bottom: 0;
+}
+.editables{
+	height: 25%;
+	width: 100%;
+}
+.e1{
+	background-color: red;
+}
+.e2{
+	background-color: green;
+}
+.e3{
+	background-color: blue;
+}
+.secc{
+	width: 30%;
+	height: 50vh;
+	position: absolute;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	overflow: hidden;
+	transition: 0.4s linear;
+	left: -28%;
+	margin-top: 2%;
+}
+.sec{
+	border-radius: 10%;
+	background-color: rgb(107,18,99);
+	width: 93%;
+	height: 80%;
+	margin: 5% auto;
+	left: 0;
+	position: absolute;
+	top: 5%;
+}
+.editar{
+	width: 88%;
+	height: 74%;
+	margin: 10% auto;
+	background-color: white
+}
+.edit{
+	width: 100%;
+	height: 400%;
+	background-color: white;
+	transition: 0.5s linear;
+}
+.fle{
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	background: white;
+	margin-left: 90%;
+	z-index: 3;
+	
+
+}
+.usu{
+	margin: 5% auto !important;
+}
+.N{
+	background-image: url(../img/1950Tran.jpg);
+	background-size: cover;
+}
+.fijo{
+	position: fixed;
+	z-index: 5;
+	float: right !important;
+}
+.BB{
+	background-color: rgb(107,18,99) !important;
+}
+.more{
+	position: absolute !important;
+	right: 0 !important;
+}
+.BT{
+	background-color: rgb(223,19,6) !important;
+}
+.btn{
+	color: white !important;
+	border-style: none !important;
+}
+.vmas{
+	margin: auto !important;
+}
+.in{
+	left: 0 !important;
+	position: absolute !important;
+}
+.R{
+	top: 40px;	
+	width:34px;
+ 	word-wrap: break-word;
+  	text-align:center;
+}
+.C{
+	top: 40px !important;
+	left: 40px !important;
+	width:34px;
+ 	word-wrap: break-word;
+	text-align:center;
+}
+.btn:hover{
+	opacity: 0.5;
+	transition: 0.5s;
+}
+.login{
+	width: 50%;
+	margin: auto;
+	margin-top: 100px;
+	box-shadow: 4px 4px 4px black;
+	background-color: rgba(0,0,0,0.3) !important;
+	color: white;
+}
+.lo{
+	color: white;
+}
+@font-face{
+	font-family:Acme;
+ src: url("../font/Acme-Regular.ttf");
+}
+.info{
+	display: none;
+}
+body{
+	overflow-y: hidden;
+	 font-family: "Acme" !important;
+}
+#contenedorMayor{
+	background-color: black;
+	width: 600%;
+	height: 98vh;
+    display: none;
+    transition: all 1s ease-in-out;
+}
+.LShan{
+	width: 125px;
+	height: 202px;
+	z-index: 2;
+	background: url(../img/spriteC.png);
+	margin-top: 26%;
+	margin-left: 6%;
+	position: fixed;
+	animation: LeeShan 1s steps(9) infinite running;
+	display: none;
+}
+.LShans{
+	width: 125px;
+	height: 202px;
+	z-index: 2;
+	background: url(../img/spriteC2.png);
+	margin-top: 26%;
+	margin-left: 6%;
+	position: fixed;
+	animation: LeeShans 1s steps(9) infinite running;
+	display: none;
+}
+.LShanP{
+	display: block;
+	width: 125px;
+	height: 202px;
+	background: url(../img/spriteL.png);
+	z-index: 2;
+	margin-top: 26%;
+	margin-left: 6%;
+	position: fixed;
+}
+@keyframes LeeShan{
+	100%{
+		background-position: -1125px top;
+	}
+
+}
+
+@keyframes LeeShans{
+	100%{
+		background-position: 1125px top;
+	}
+
+}
+.M-Do{
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+.contenedorFecha{text-align: center;
+	font-size: 38px;
+	float: left;
+	width: 16.6%;
+	height: 98vh;
+	position: relative;
+}
+.inicio{text-align: center;
+	font-size: 38px;
+	float: left;
+	width: 100%;
+	height: 100vh;
+	display: none;
+ }
+.informacion{
+	margin-top: 6%; 
+	width: 30%;
+	height: 60vh;
+	color: white;
+	background: rgba(10,30,50,0.8);
+	border-radius: 5%;
+	padding: 3%;
+	font-size: 80%;
+	text-align: center;
+}
+.informacion h1{
+	color: rgb(223,19,6);
+	font-size: 85%;
+}
+.informacion h3{
+	color: black;
+	font-size: 75%;
+}
+.boton{
+	font-family: Acme !important;
+	cursor: pointer;
+    padding: 2%;
+    width: 30%;
+    color: white;
+    font-size: 16px;
+    border-radius: 10%;
+    background-color: rgb(107,18,99);
+}
+.boton:hover{
+	color: rgb(223,19,6);
+	font-size: 18px;
+}
+.N1{
+	background-image: url(../img/p_inicio.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.N2{
+	background-image: url(../img/23aC.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.N3{
+	background-image: url(../img/1944Tran.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	
+}
+
+.N4{
+	background-image: url(../img/1950Trans.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+
+}
+
+.N5{
+	background-image: url(../img/p_1970.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.NN{
+	background-image: url(../img/p_RA.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	width: 16.8%;
+}
+.NR{
+	background-image: url(../img/fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	position: absolute;
+	display: none;
+	text-align: center;
+	font-size: 38px;
+	width: 100%;
+	height: 100vh;
+}
+.Juego{
+	background-image: url(../img/p_juego.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	width: 16.8%;
+}
+.RA{
+	bottom: 10%;
+	position: absolute;
+	width: 20%;
+}
+.logo{
+	background-color: black;
+	margin: auto;
+	align-items: center;
+	overflow: hidden;
+	text-align: center;
+}
+.ventana{
+	position: absolute;
+	background-color:black;
+	top: -1000px;
+	width: 100%;
+	height: 98vh;
+}
+.animacion23aC{
+	margin-top: 5%;
+	width: 70%;
+	height: 80vh;
+	background-color: white;
+}
+.btnSalir{
+	position: absolute;
+	right: 0;
+	background-color: rgb(223,19,6);
+	font-weight: bolder;
+	font-size: 80%;
+	width:4%; 
+	height:8%;
+	cursor: pointer;
+}
+.btnSalir:hover{
+	color: rgb(107,18,99);
+	font-size: 82%;
+}
+.dojoJapones{
+	width:25%; 
+	margin-top: 23%;
+	overflow: hidden;
+	cursor: pointer;
+}
+.casita{
+	width: 100%;
+	top: 0px;
+}
+.texto23ac{
+	width: 45%;
+    height: 80vh;
+	background-color: white;
+	font-size: 72%;
+	margin-top: 2%;
+	overflow: hidden;
+}
+.ventanatexto{
+	position: absolute;
+	background-color:rgba(00,00,00,0.7);
+	top: 0px;
+	width: 100%;
+	height: 98vh;	
+	display: none;
+}
+.p_23aC{
+	background-color: transparent !important;
+}
+.tex{
+	padding: 3%;
+	text-align: justify;
+}
+.inf{
+	display: none;
+	border-radius: 3%;
+}
+.H1{
+	cursor: pointer;
+}
+.H2{
+	cursor: pointer;
+}
+.SecHistorieta{
+	display: none;
+}
+.SecHistorieta2{
+	display: none;
+}
+.historieta{
+	width: 50%;
+	height: 70vh;
+	margin-top: 1.8%;
+	margin-bottom: 1.8%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	box-shadow:  7px 7px 15px gray;
+	overflow: hidden;
+}
+.a1950{
+	transition: all 1s ease-in-out;
+}
+.a1944{
+	transition: all 1s ease-in-out;
+}
+.i1970{
+	display: block;
+}
+.flecha1{
+   margin-top: 1.8%;
+   color: white;
+   cursor: pointer;
+   font-size: 78%;
+   border-radius: 100%;
+}
+.flecha1:hover{
+	color: rgb(223,19,6);
+}
+.flecha2{
+	color: white;
+	cursor: pointer;
+	font-size: 78%;
+   	border-radius: 100%;
+   	border: none;
+ }
+ .flecha2:hover{
+	color: rgb(107,18,99);
+}
+
+.banderas{
+	width: 100%;
+	cursor: pointer;
+	overflow: hidden;
+	height: 26%;
+}
+.an1970{
+	display: none;
+}
+.texto1970{
+    width:40%;
+    height:63vh;
+    left: 30%;
+    border-radius: 3%;
+	position: absolute;
+    display: none;
+}
+.contenido{
+	height: 53vh;
+	width: 100%;
+	float: left;
+	margin-bottom: 1%;
+	background-color: rgba(255,255,255,0.6);
+}
+.tex2{
+	padding: 20px;
+	text-align: justify;
+	font-size: 23px;
+	display: none;
+	float: left;
+}
+.ventana2{
+	position: absolute;
+	background-color:black;
+	top: 0px;
+	width: 100%;
+	height: 98vh;
+	display: none;
+}
+.animacion{
+	margin-top: 5%;
+	width: 55%;
+	height: 80vh;
+	background-color: white;
+}
+.informacionRA{
+	width: 25%;
+	height: 200px;
+	background: white;
+	margin-left: 5%;
+	opacity: 0.7;
+	border-radius: 3%;
+	}
+.textoRA{
+	padding: 20px;
+	text-align: justify;
+	font-size: 25px;
+}
+.planeta{
+	width: 48%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.ini{
+	float: left;
+}
+
+.btn:hover{
+	opacity: 0.5;
+	transition: 0.5s;
+}
+
+.Ad{
+	padding: 20px;
+	width: 50%;
+	height: 80vh;
+	margin:  auto;
+	box-shadow: 4px 4px 4px black;
+	background-color: rgba(0,0,0,0.3) !important;
+	color: white;
+	border-radius: 20px;
+}
+.Ad div{
+	width: 80%;
+	margin:auto;
+}
+
+.cabezalista{
+	background-color:rgba(132,8,8,0.4);
+}
+th{
+	color: white;
+}
+td{
+	color: white;
+}
+.red{
+	font-weight: bold;
+	color: rgb(223,19,6);
+	cursor: pointer;
+}
+.red:hover{
+	text-decoration-line: none;
+
+}
+.blanco{
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+}
+.blanco:hover{
+	text-decoration-line: none;
+}
+.morado{
+	font-weight: bold;
+	color: rgb(107,18,99);
+	cursor: pointer;
+}
+.morado:hover{
+	color: #00BFFF;
+	text-decoration-line: none;
+
+}
+
+input[type=text]{
+	width: 150px;
+border: 2px solid rgb(107,18,99);
+  border-radius: 4px;
+   -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.6s ease-in-out;
+}
+input[type=text]:hover{
+	width: 100%;
+}
+input[type=password]{
+	width: 150px;
+border: 2px solid rgb(223,19,6);
+  border-radius: 4px;
+   -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.6s ease-in-out;
+}
+input[type=password]:hover{
+	width: 100%;
+}
+input[type=email]{
+	width: 150px;
+border: 2px solid rgb(223,19,6);
+  border-radius: 4px;
+   -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.6s ease-in-out;
+}
+input[type=email]:hover{
+	width: 100%;
+}
