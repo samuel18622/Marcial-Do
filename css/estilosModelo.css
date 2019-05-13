@@ -5,6 +5,12 @@
 	overflow:inherit;
 	text-decoration:none !important;
 }
+.dire{
+	width: 10%
+	height:5vh;
+	overflow: hidden;
+	margin: auto;
+}
 .quieto{
 	overflow: hidden;
 }
@@ -230,12 +236,15 @@ body{
 	height: 98vh;
 	position: relative;
 }
-.inicio{text-align: center;
+.vIni{text-align: center;
 	font-size: 38px;
 	float: left;
 	width: 100%;
 	height: 100vh;
 	display: none;
+ }
+ .i2{
+ 	background: #6F3974 !important;
  }
 .informacion{
 	margin-top: 6%; 
@@ -269,6 +278,12 @@ body{
 .boton:hover{
 	color: rgb(223,19,6);
 	font-size: 18px;
+}
+.n1{
+	background-image: url(../img/Pins.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
 }
 .N1{
 	background-image: url(../img/p_inicio.jpg);

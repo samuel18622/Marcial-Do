@@ -37,6 +37,12 @@ $('.M-Do').click(function(){
 });
 $('.ade').click(function(){
 	$('.inicio').toggle('2000');
+	$('.infor').show('fast');
+	andar();
+	parar();
+});
+$('.b6').click(function(){
+	$('.infor').toggle('2000');
 	$('#contenedorMayor').show('fast');
 	andar();
 	parar();
