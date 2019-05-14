@@ -60,7 +60,8 @@ $('.b6').click(function(){
 			trasladar += -14.28;
 			if(trasladar < -98)
 				trasladar = 0;
-			$('.a1950').css('transform', 'translateY('+trasladar+'%)'); 
+			$('.a1950').css('transform', 'translateY('+trasladar+'%)');
+			$('.M2').css('opacity','1');
 		});
 		$('.ar').on('click', function(e){
 			e.preventDefault();
@@ -90,7 +91,8 @@ $('.b6').click(function(){
 			trasladar += -10;
 			if(trasladar < -98)
 				trasladar = 0;
-			$('.a1944').css('transform', 'translateY('+trasladar+'%)'); 
+			$('.a1944').css('transform', 'translateY('+trasladar+'%)');
+			$('.m2').css('opacity','1'); 
 		});
 	$('.contenedorFecha div .casita').on({
 		click:
@@ -208,6 +210,7 @@ $(this).text('Contacto');
 		$('.LShan').fadeOut('fast');
 		$('.LShans').fadeOut('fast');
 		$('.LShans').css('opacity','0');
+		$('.m2').css('opacity','0');
 		$('.LShanP').fadeOut('fast');
 
 }); 
@@ -218,6 +221,7 @@ $(this).text('Contacto');
 		$('.LShan').fadeOut('fast');
 		$('.LShans').fadeOut('fast');
 		$('.LShans').css('opacity','0');
+		$('.M2').css('opacity','0');
 		$('.LShanP').fadeOut('fast');
 }); 
 	$('.btnSalir').click(function(){
