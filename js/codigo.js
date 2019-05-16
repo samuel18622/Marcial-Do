@@ -94,7 +94,7 @@ $('.b6').click(function(){
 			$('.a1944').css('transform', 'translateY('+trasladar+'%)');
 			$('.m2').css('opacity','1'); 
 		});
-	$('.contenedorFecha div .casita').on({
+	$('.contenedorFecha div .japones').on({
 		click:
 		function(){
 		var rutaimg = $(this).attr('src');
@@ -174,16 +174,7 @@ $(this).text('Contacto');
 		$('.LShans').fadeOut('fast').css('display','none');
 		$('.LShans').css('opacity','0');
 		$('.LShanP').fadeOut('fast').css('display','none');
-	},
-	mouseenter: function(){
-		$('.bandera1').css('display','none');
-		$('.bandera').css('display','block');
-	},
-	mouseleave: function(){
-		$('.bandera1').css('display','block');
-		$('.bandera').css('display','none');
-	},
-	
+	}
 });
 		$('.vmas').click(function(){
 		$('.tex2').fadeIn('fast');
@@ -251,22 +242,18 @@ $(this).text('Contacto');
 		$('.texto1970').fadeOut('fast');
 		$('body').removeClass('quieto2');
 		$('.LShans').css('opacity','1');
-}); 
-	$('.RA').click(function(){
-		$('.NR').fadeIn('fast');
-		$(this).css('display','none');
-}); 
+});
 $(window).scroll(function(event) {
   var scrollLeft = $(window).scrollLeft();
   console.log("Horizontal "+scrollLeft);
   if (scrollLeft > 304) {
-	$(".casita").attr("src","img/casita.png");
+	$(".japones").attr("src","img/dojo.png");
 }if(scrollLeft > 0 && scrollLeft < 304){
-		$(".casita").attr("src","img/casita2.png");
-}if (scrollLeft > 3880) {
+		$(".japones").attr("src","img/dojo.png");
+}if (scrollLeft > 99880) {
 	$('.LShan').fadeOut('fast').css('display','none');
 }
-if (scrollLeft < 3880) {
+if (scrollLeft < 99880) {
 	$('.LShan').fadeIn('fast');
 }
 });

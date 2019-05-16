@@ -170,10 +170,14 @@ body{
 	 font-family: "Acme" !important;
 }
 #contenedorMayor{
-	background-color: black;
-	width: 600%;
-	height: 98vh;
+	background-image: url(../img/fondoM.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	width: 700%;
+	height: 100vh;
     display: none;
+    overflow-y: hidden !important;
     transition: all 1s ease-in-out;
 }
 .LShan{
@@ -232,9 +236,13 @@ body{
 .contenedorFecha{text-align: center;
 	font-size: 38px;
 	float: left;
-	width: 16.6%;
-	height: 98vh;
+	width: 14.2%;
+	height: 100vh;
 	position: relative;
+	margin-right: 2.93%;
+}
+.Juego{
+	margin-right: 0px !important;
 }
 .vIni{text-align: center;
 	font-size: 38px;
@@ -291,65 +299,6 @@ body{
 	background-position: center;
 	background-size: 100%;
 }
-.N2{
-	background-image: url(../img/23aC.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-}
-.N3{
-	background-image: url(../img/1944Tran.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-	
-}
-
-.N4{
-	background-image: url(../img/1950Trans.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-
-}
-
-.N5{
-	background-image: url(../img/p_1970.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-}
-.NN{
-	background-image: url(../img/p_RA.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-	width: 16.8%;
-}
-.NR{
-	background-image: url(../img/fondo.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-	position: absolute;
-	display: none;
-	text-align: center;
-	font-size: 38px;
-	width: 100%;
-	height: 100vh;
-}
-.Juego{
-	background-image: url(../img/p_juego.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-	width: 16.8%;
-}
-.RA{
-	bottom: 10%;
-	position: absolute;
-	width: 20%;
-}
 .logo{
 	background-color: black;
 	margin: auto;
@@ -385,14 +334,26 @@ body{
 	font-size: 82%;
 }
 .dojoJapones{
-	width:25%; 
-	margin-top: 23%;
+	width:40%; 
+	margin-top: 16%;
 	overflow: hidden;
 	cursor: pointer;
 }
-.casita{
+.casajaponesa{
+	width: 40%;
+    margin-top: 11%;
+    overflow: hidden;
+}
+.dojo{
 	width: 100%;
 	top: 0px;
+}
+.casa{
+	width: 65%;
+}
+.templo{
+	width: 40%;
+    margin-top: 2%;
 }
 .texto23ac{
 	width: 45%;
@@ -443,6 +404,9 @@ body{
 	background-size: 100%;
 	box-shadow:  7px 7px 15px gray;
 	overflow: hidden;
+}
+.sinop{
+	display: none;
 }
 .a1950{
 	transition: all 1s ease-in-out;
@@ -519,23 +483,17 @@ body{
 	height: 80vh;
 	background-color: white;
 }
-.informacionRA{
-	width: 25%;
-	height: 200px;
-	background: white;
-	margin-left: 5%;
-	opacity: 0.7;
-	border-radius: 3%;
-	}
-.textoRA{
-	padding: 20px;
-	text-align: justify;
-	font-size: 25px;
+.templos{
+	width: 40%;
+    position: absolute;
+    overflow: hidden;
+    left: 32%;
+    top: 15%;
 }
-.planeta{
-	width: 48%;
-	border-radius: 50%;
+.plataforma{
+	width: 70%;
 	overflow: hidden;
+	margin-top: 30%;
 }
 .ini{
 	float: left;
