@@ -344,9 +344,17 @@ body{
     margin-top: 11%;
     overflow: hidden;
 }
+.muralla{
+	width: 100%;
+    overflow: hidden;
+}
 .dojo{
 	width: 100%;
 	top: 0px;
+}
+
+.muralla2{
+	width: 90%;
 }
 .casa{
 	width: 65%;
@@ -407,6 +415,14 @@ body{
 }
 .sinop{
 	display: none;
+	position: absolute;
+	width: 80%;
+	font-size:0.6em;
+	margin-left: 10%;
+	height: 72vh;
+	background-color: white;
+	opacity: 0.8;
+	padding: 5% 1%;
 }
 .a1950{
 	transition: all 1s ease-in-out;

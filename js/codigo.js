@@ -243,6 +243,66 @@ $(this).text('Contacto');
 		$('body').removeClass('quieto2');
 		$('.LShans').css('opacity','1');
 });
+	$('.m2').click(function(){
+		$('.sin2').fadeIn('fast');
+		$('.sin2').fadeIn('fast').css({"display":"none"});
+});
+	$('.m3').click(function(){
+		$('.sin3').fadeIn('fast');
+		$('.sin3').fadeIn('fast').css({"display":"none"});
+});
+	$('.m4').click(function(){
+		$('.sin4').fadeIn('fast');
+		$('.sin4').fadeIn('fast').css({"display":"none"});
+});
+	$('.m5').click(function(){
+		$('.sin5').fadeIn('fast');
+		$('.sin5').fadeIn('fast').css({"display":"none"});
+});
+	$('.m6').click(function(){
+		$('.sin6').fadeIn('fast');
+		$('.sin6').fadeIn('fast').css({"display":"none"});
+});
+	$('.m7').click(function(){
+		$('.sin7').fadeIn('fast');
+		$('.sin7').fadeIn('fast').css({"display":"none"});
+});
+	$('.m8').click(function(){
+		$('.sin8').fadeIn('fast');
+		$('.sin8').fadeIn('fast').css({"display":"none"});
+});
+	$('.m9').click(function(){
+		$('.sin9').fadeIn('fast');
+		$('.sin9').fadeIn('fast').css({"display":"none"});
+});
+	$('.m10').click(function(){
+		$('.sin10').fadeIn('fast');
+		$('.sin10').fadeIn('fast').css({"display":"none"});
+});
+	$('.M2').click(function(){
+		$('.Sin2').fadeIn('fast');
+		$('.Sin2').fadeIn('fast').css({"display":"none"});
+});
+	$('.M3').click(function(){
+		$('.Sin3').fadeIn('fast');
+		$('.Sin3').fadeIn('fast').css({"display":"none"});
+});
+	$('.M4').click(function(){
+		$('.Sin4').fadeIn('fast');
+		$('.Sin4').fadeIn('fast').css({"display":"none"});
+});
+	$('.M5').click(function(){
+		$('.Sin5').fadeIn('fast');
+		$('.Sin5').fadeIn('fast').css({"display":"none"});
+});
+	$('.M6').click(function(){
+		$('.Sin6').fadeIn('fast');
+		$('.Sin6').fadeIn('fast').css({"display":"none"});
+});
+	$('.M7').click(function(){
+		$('.Sin7').fadeIn('fast');
+		$('.Sin7').fadeIn('fast').css({"display":"none"});
+});
 $(window).scroll(function(event) {
   var scrollLeft = $(window).scrollLeft();
   console.log("Horizontal "+scrollLeft);
