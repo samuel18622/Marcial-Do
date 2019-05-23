@@ -94,7 +94,7 @@ $('.b6').click(function(){
 			$('.a1944').css('transform', 'translateY('+trasladar+'%)');
 			$('.m2').css('opacity','1'); 
 		});
-	$('.contenedorFecha div .japones').on({
+	$('.contenedorFecha .dojoJapones').on({
 		click:
 		function(){
 		var rutaimg = $(this).attr('src');
@@ -203,6 +203,7 @@ $(this).text('Contacto');
 		$('.LShans').css('opacity','0');
 		$('.m2').css('opacity','0');
 		$('.LShanP').fadeOut('fast');
+		$('.f1944').fadeOut('fast');
 
 }); 
 		$('.H2').click(function(){
@@ -214,6 +215,7 @@ $(this).text('Contacto');
 		$('.LShans').css('opacity','0');
 		$('.M2').css('opacity','0');
 		$('.LShanP').fadeOut('fast');
+		$('.f1950').fadeOut('fast');
 }); 
 	$('.btnSalir').click(function(){
 		$('.ventana2').fadeOut('fast');
@@ -224,6 +226,7 @@ $(this).text('Contacto');
 		$('.S1').click(function(){
 		$('.SecHistorieta').fadeOut('fast');
 		$('.H1').fadeIn('fast');
+		$('.f1944').fadeIn('fast');
 		$('body').removeClass('quieto2');
 		$('.LShans').css('opacity','1');
 }); 
@@ -235,6 +238,7 @@ $(this).text('Contacto');
 		$('.S2').click(function(){
 		$('.SecHistorieta2').fadeOut('fast');
 		$('.H2').fadeIn('fast');
+		$('.f1950').fadeIn('fast');
 		$('body').removeClass('quieto2');
 		$('.LShans').css('opacity','1');
 }); 

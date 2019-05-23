@@ -183,7 +183,7 @@ body{
 .LShan{
 	width: 125px;
 	height: 202px;
-	z-index: 2;
+	z-index: 5;
 	background: url(../img/spriteC.png);
 	margin-top: 26%;
 	margin-left: 6%;
@@ -194,7 +194,7 @@ body{
 .LShans{
 	width: 125px;
 	height: 202px;
-	z-index: 2;
+	z-index: 5;
 	background: url(../img/spriteC2.png);
 	margin-top: 26%;
 	margin-left: 6%;
@@ -207,14 +207,80 @@ body{
 	width: 125px;
 	height: 202px;
 	background: url(../img/spriteL.png);
-	z-index: 2;
+	z-index: 5;
 	margin-top: 26%;
 	margin-left: 6%;
 	position: fixed;
 }
+.casita1{
+	position: absolute;
+    left: 50px;
+    top: 165px;
+}
+.casita2{
+	position: absolute;
+    right: 50px;
+    top: 190px;
+}
+.columna1{
+    position: absolute;
+    left: 90px;
+    top: 230px;
+}
+.columna2{
+	position: absolute;
+	top: 230px;
+	right: 90px;
+}
+.puente{
+	position: absolute;
+	left: 0px;
+}
+.objeto1{
+	left: 40px;
+	top: 50px;
+}
+.objeto2{
+	top: 80px;
+	left: 800px;
+}
+.objeto3{
+	right: 300px !important;
+	top: 40px;
+}
+.objeto4{
+	right: 50px;
+	top: 20px;
+}
+.nube{
+	animation: nube 800s  infinite running;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+}
+
+@keyframes nube{
+	0%{top: 2%;
+		left: 0px;
+	}
+	100%{
+		left: 30000px;
+	}
+}
 @keyframes LeeShan{
 	100%{
 		background-position: -1125px top;
+	}
+}
+@keyframes bandera{
+	100%{
+		background-position: -290px top;
+	}
+
+}
+@keyframes dojo{
+	100%{
+		background-position: -1406px top;
 	}
 
 }
@@ -236,10 +302,9 @@ body{
 .contenedorFecha{text-align: center;
 	font-size: 38px;
 	float: left;
-	width: 14.2%;
+	width: 16.6%;
 	height: 100vh;
 	position: relative;
-	margin-right: 2.93%;
 }
 .Juego{
 	margin-right: 0px !important;
@@ -282,6 +347,7 @@ body{
     font-size: 16px;
     border-radius: 10%;
     background-color: rgb(107,18,99);
+    z-index: 3;
 }
 .boton:hover{
 	color: rgb(223,19,6);
@@ -310,8 +376,9 @@ body{
 	position: absolute;
 	background-color:black;
 	top: -1000px;
-	width: 100%;
-	height: 98vh;
+	width: 86%;
+	height: 100vh;
+	z-index: 8;
 }
 .animacion23aC{
 	margin-top: 5%;
@@ -328,21 +395,28 @@ body{
 	width:4%; 
 	height:8%;
 	cursor: pointer;
+	z-index: 3;
 }
 .btnSalir:hover{
 	color: rgb(107,18,99);
 	font-size: 82%;
 }
 .dojoJapones{
-	width:40%; 
-	margin-top: 16%;
+	width: 703px;
+	height: 411px;
+	background-image: url("../img/dojoani.png");
 	overflow: hidden;
 	cursor: pointer;
+	animation: dojo  1s steps(2) infinite running;
+	z-index: 3;
 }
 .casajaponesa{
-	width: 40%;
-    margin-top: 11%;
+	width: 80%;
+	right: 0px;
     overflow: hidden;
+    position: absolute;
+    float: right;
+    z-index: 2;
 }
 .muralla{
 	width: 100%;
@@ -352,16 +426,19 @@ body{
 	width: 100%;
 	top: 0px;
 }
-
 .muralla2{
 	width: 90%;
 }
 .casa{
-	width: 65%;
+	width: 33%;
+    float: left;
 }
 .templo{
 	width: 40%;
     margin-top: 2%;
+}
+.temploJ{
+	width: 100%;
 }
 .texto23ac{
 	width: 45%;
@@ -375,8 +452,8 @@ body{
 	position: absolute;
 	background-color:rgba(00,00,00,0.7);
 	top: 0px;
-	width: 100%;
-	height: 98vh;	
+	width: 86%;
+    height: 100vh;	
 	display: none;
 }
 .p_23aC{
@@ -460,6 +537,13 @@ body{
 	overflow: hidden;
 	height: 26%;
 }
+.bandera{
+ width: 145px;
+ height: 130px;
+ position: absolute;
+ background-image: url("../img/banderaani.png");
+ animation: bandera 1s steps(2) infinite running;
+}
 .an1970{
 	display: none;
 }
@@ -489,8 +573,8 @@ body{
 	position: absolute;
 	background-color:black;
 	top: 0px;
-	width: 100%;
-	height: 98vh;
+	width: 86%;
+	height: 100vh;
 	display: none;
 }
 .animacion{
