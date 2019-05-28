@@ -5,6 +5,9 @@
 	overflow:inherit;
 	text-decoration:none !important;
 }
+::-webkit-scrollbar {
+    height: 0px;
+}
 .dire{
 	width: 10%
 	height:5vh;
@@ -111,6 +114,17 @@
 }
 .BB{
 	background-color: rgb(107,18,99) !important;
+}
+.BM{
+	background-color: transparent !important;
+	overflow: hidden;
+	width: 80px;
+    margin-top: 20px;
+}
+.BS{
+	background-color: rgb(107,18,99);
+	padding: 0 4%;
+	color: white;
 }
 .more{
 	position: absolute !important;
@@ -236,6 +250,18 @@ body{
 	position: absolute;
 	left: 0px;
 }
+.cerca1{
+	position: absolute;
+    bottom: 110px;
+    z-index: 2;
+    right: 0;
+}
+.cerca2{
+	position: absolute;
+    bottom: 110px;
+    z-index: 2;
+    right: 0;
+}
 .objeto1{
 	left: 40px;
 	top: 50px;
@@ -297,6 +323,7 @@ body{
 	background-color: black;
 	text-align: center;
 	display: flex;
+	position: absolute;
 	flex-direction: column;
 }
 .contenedorFecha{text-align: center;
@@ -308,6 +335,9 @@ body{
 }
 .Juego{
 	margin-right: 0px !important;
+}
+.BJuego{
+	cursor: pointer;
 }
 .vIni{text-align: center;
 	font-size: 38px;
@@ -353,6 +383,14 @@ body{
 	color: rgb(223,19,6);
 	font-size: 18px;
 }
+.b6{
+	padding: 1% !important;
+	background-color: rgb(223,19,6) !important;
+	margin-bottom: 2% !important;
+}
+.b6:hover{
+	color: white !important
+}
 .F1{
 	background-image: url(../img/Pins.jpg);
 	background-repeat: no-repeat;
@@ -397,6 +435,14 @@ body{
 	cursor: pointer;
 	z-index: 3;
 }
+.S1{
+	top: 10px;
+ 	right: 180px !important;
+}
+.S2{
+	top: 10px;
+ 	right: 180px !important;
+}
 .btnSalir:hover{
 	color: rgb(107,18,99);
 	font-size: 82%;
@@ -439,6 +485,7 @@ body{
 }
 .temploJ{
 	width: 100%;
+    margin-top: 2.8%;
 }
 .texto23ac{
 	width: 45%;
@@ -455,6 +502,7 @@ body{
 	width: 86%;
     height: 100vh;	
 	display: none;
+	z-index: 8;
 }
 .p_23aC{
 	background-color: transparent !important;
@@ -480,6 +528,7 @@ body{
 	display: none;
 }
 .historieta{
+	z-index: 4;
 	width: 50%;
 	height: 70vh;
 	margin-top: 1.8%;
@@ -499,7 +548,7 @@ body{
 	height: 72vh;
 	background-color: white;
 	opacity: 0.8;
-	padding: 5% 1%;
+	padding: 18% 1.5%;
 }
 .a1950{
 	transition: all 1s ease-in-out;
@@ -536,6 +585,8 @@ body{
 	cursor: pointer;
 	overflow: hidden;
 	height: 26%;
+	position: absolute;
+	top: 0;
 }
 .bandera{
  width: 145px;
@@ -543,6 +594,8 @@ body{
  position: absolute;
  background-image: url("../img/banderaani.png");
  animation: bandera 1s steps(2) infinite running;
+ top: 45%;
+ right: 47%;
 }
 .an1970{
 	display: none;
