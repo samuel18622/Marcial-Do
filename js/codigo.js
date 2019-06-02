@@ -1,6 +1,13 @@
 $(document).ready(function(){
 
 $('body').addClass('quieto');
+$('.julio a').click(function(e){
+		e.preventDefault(); 
+		var atributo = $(this).attr('href');
+		$('body, html').stop().animate({
+			scrollTop : $(atributo).offset().top
+		},1000, 'easeOutQuart');
+});
 
 function andar() {
 	document.onkeydown = andar
@@ -204,6 +211,7 @@ $(this).text('Contacto');
 		$('.m2').css('opacity','0');
 		$('.LShanP').fadeOut('fast');
 		$('.f1944').fadeOut('fast');
+		$('.templo').fadeOut('fast');
 
 }); 
 		$('.H2').click(function(){
@@ -216,6 +224,8 @@ $(this).text('Contacto');
 		$('.M2').css('opacity','0');
 		$('.LShanP').fadeOut('fast');
 		$('.f1950').fadeOut('fast');
+		$('.cerca1').fadeOut('fast');
+		$('.casajaponesa').fadeOut('fast');
 }); 
 	$('.btnSalir').click(function(){
 		$('.ventana2').fadeOut('fast');
@@ -226,6 +236,7 @@ $(this).text('Contacto');
 		$('.S1').click(function(){
 		$('.SecHistorieta').fadeOut('fast');
 		$('.H1').fadeIn('fast');
+		$('.templo').fadeIn('fast');
 		$('.f1944').fadeIn('fast');
 		$('body').removeClass('quieto2');
 		$('.LShans').css('opacity','1');
@@ -241,6 +252,8 @@ $(this).text('Contacto');
 		$('.f1950').fadeIn('fast');
 		$('body').removeClass('quieto2');
 		$('.LShans').css('opacity','1');
+		$('.cerca1').fadeIn('fast');
+		$('.casajaponesa').fadeIn('fast');
 }); 
 	$('.Salir').click(function(){
 		$('.texto1970').fadeOut('fast');
@@ -307,6 +320,7 @@ $(this).text('Contacto');
 		$('.Sin7').fadeIn('fast');
 		$('.Sin7').fadeIn('fast').css({"display":"none"});
 });
+	
 $(window).scroll(function(event) {
   var scrollLeft = $(window).scrollLeft();
   console.log("Horizontal "+scrollLeft);

@@ -29,7 +29,7 @@ $result = mysqli_query($link, $sql);
 		<article class="editar">
 		<div class="edit">
 	
-   <div class='editables e1'><img src='img/p_inicio.jpg' width='100%'></div>
+   <div class='editables e1'><h1>Editar Secciones</h1></div>
   
   <?php echo "<a";
    echo " href='editar.php?idGente=1'>";

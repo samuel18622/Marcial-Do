@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.0.2
--- http://www.phpmyadmin.net
+-- version 4.8.4
+-- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 11-04-2019 a las 04:01:54
--- Versión del servidor: 10.0.17-MariaDB
--- Versión de PHP: 5.6.14
+-- Servidor: 127.0.0.1:3306
+-- Tiempo de generación: 31-05-2019 a las 14:49:16
+-- Versión del servidor: 5.7.24
+-- Versión de PHP: 7.2.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -26,11 +28,14 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `login`
 --
 
-CREATE TABLE `login` (
-  `ID` int(2) NOT NULL,
+DROP TABLE IF EXISTS `login`;
+CREATE TABLE IF NOT EXISTS `login` (
+  `ID` int(2) NOT NULL AUTO_INCREMENT,
   `usuario_log` varchar(30) NOT NULL,
-  `contra_log` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16;
+  `contra_log` varchar(30) NOT NULL,
+  PRIMARY KEY (`ID`),
+  UNIQUE KEY `usuario_log` (`usuario_log`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf16;
 
 --
 -- Volcado de datos para la tabla `login`
@@ -47,11 +52,14 @@ INSERT INTO `login` (`ID`, `usuario_log`, `contra_log`) VALUES
 -- Estructura de tabla para la tabla `registro`
 --
 
-CREATE TABLE `registro` (
-  `ID` int(2) NOT NULL,
+DROP TABLE IF EXISTS `registro`;
+CREATE TABLE IF NOT EXISTS `registro` (
+  `ID` int(2) NOT NULL AUTO_INCREMENT,
   `Nombre` varchar(30) NOT NULL,
-  `Correo` varchar(150) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16;
+  `Correo` varchar(150) NOT NULL,
+  PRIMARY KEY (`ID`),
+  UNIQUE KEY `Correo` (`Correo`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf16;
 
 --
 -- Volcado de datos para la tabla `registro`
@@ -59,8 +67,7 @@ CREATE TABLE `registro` (
 
 INSERT INTO `registro` (`ID`, `Nombre`, `Correo`) VALUES
 (1, 'Aleja ', 'mverabetancur@gmail.com'),
-(2, 'Codi', 'panda@hotmail.com'),
-(4, 'samu', 'samuel18@gmail.com');
+(2, 'Codi', 'panda@hotmail.com');
 
 -- --------------------------------------------------------
 
@@ -68,12 +75,14 @@ INSERT INTO `registro` (`ID`, `Nombre`, `Correo`) VALUES
 -- Estructura de tabla para la tabla `seccion`
 --
 
-CREATE TABLE `seccion` (
-  `ID` int(2) NOT NULL,
+DROP TABLE IF EXISTS `seccion`;
+CREATE TABLE IF NOT EXISTS `seccion` (
+  `ID` int(2) NOT NULL AUTO_INCREMENT,
   `Nombre` varchar(150) NOT NULL,
   `Texto` text NOT NULL,
-  `imagen` varchar(150) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16;
+  `imagen` varchar(150) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf16;
 
 --
 -- Volcado de datos para la tabla `seccion`
@@ -81,52 +90,10 @@ CREATE TABLE `seccion` (
 
 INSERT INTO `seccion` (`ID`, `Nombre`, `Texto`, `imagen`) VALUES
 (1, 'Inicio', '!!Bienvenido a MARCIAL-DO!!\r\nUn time-line con Ã©nfasis en las artes marciales.\r\n!!AcompÃ¡Ã±anos en esta gran aventura por el tiempo!!\r\n', 'img/casita.png'),
-(2, '23 Ac', 'Nomi no Sukune fue un legendario luchador de sumo japonÃ©s durante la era del Emperador Suinin.  Supuestamente, en el 23 a. C., el Emperador le ordenÃ³ a Nomi no Sukune que tratara con Taima no Kehaya (? ? ? ?) despuï¿½s de que se jactara de que era el hombre mÃ¡s fuerte "bajo el cielo". Nomi no Sukune se enfrentï¿½ a Taima no Kehaya en la mano combatiï¿½ a mano y se rompiï¿½ las costillas con una patada y la espalda con otra, matando a Taima no Kehaya.  No era sumo moderno, pero se le considera como el creador humano del sumo.  Era un antepasado de Sugawara no Michizane.', 'Array'),
-(3, 'Año 1970', 'El Campeonato Mundial de Karate de 1970 fue la primera ediciï¿½n del torneo de karate mï¿½s importante del mundo. Se disputÃ³ en Tokio,  JapÃ³n y contÃ³ con la participaciï¿½n de 178 karatekas de diferentes paï¿½ses del mundo. \r\nEste campeonatos solo fue de comitï¿½ por equipos y exclusivamente en la rama varonil ya no fue sino hasta 1980 en Madrid, Espaï¿½a, que hubo participaciï¿½n femenina y que se incluyï¿½ la modalidad de Kata. ? Participaron 178 deportistas federados, de los cuales 41 fueron de ï¿½frica, 41 de Asia, 51 de Europa, 9 de Oceanï¿½a y 36 de Amï¿½rica. ', 'Array');
+(2, '23 Ac', 'Nomi no Sukune (é‡Ž è¦‹ å®¿ ç¦°) fue un legendario luchador de sumo japonÃ©s durante la era del Emperador Suinin.  Supuestamente, en el 23 a. C., el Emperador le ordenÃ³ a Nomi no Sukune que tratara con Taima no Kehaya (éº» è¹´ é€Ÿ é€Ÿ) despuÃ©s de que se jactara de que era el hombre mÃ¡s fuerte \"bajo el cielo\". Nomi no Sukune se enfrentÃ³ a Taima no Kehaya en la mano combatiÃ³ a mano y se rompiÃ³ las costillas con una patada y la espalda con otra, matando a Taima no Kehaya.  No era sumo moderno, pero se le considera como el creador humano del sumo.  Era un antepasado de Sugawara no Michizane.', 'img/pa_23aC.jpg'),
+(3, 'Año 1970', 'El Campeonato Mundial de Karate de 1970 fue la primera ediciÃ³n del torneo de karate mÃ¡s importante del mundo. Se disputÃ³ en Tokio, â€‹ JapÃ³n y contÃ³ con la participaciÃ³n de 178 karatekas de diferentes paÃ­ses del mundo. \r\nEste campeonatos solo fue de comitÃ© por equipos y exclusivamente en la rama varonil ya no fue sino hasta 1980 en Madrid, EspaÃ±a, que hubo participaciÃ³n femenina y que se incluyÃ³ la modalidad de Kata. â€‹ Participaron 178 deportistas federados, de los cuales 41 fueron de Ãfrica, 41 de Asia, 51 de Europa, 9 de OceanÃ­a y 36 de AmÃ©rica. ', 'img/pa_1970.jpg');
+COMMIT;
 
---
--- Índices para tablas volcadas
---
-
---
--- Indices de la tabla `login`
---
-ALTER TABLE `login`
-  ADD PRIMARY KEY (`ID`),
-  ADD UNIQUE KEY `usuario_log` (`usuario_log`);
-
---
--- Indices de la tabla `registro`
---
-ALTER TABLE `registro`
-  ADD PRIMARY KEY (`ID`),
-  ADD UNIQUE KEY `Correo` (`Correo`);
-
---
--- Indices de la tabla `seccion`
---
-ALTER TABLE `seccion`
-  ADD PRIMARY KEY (`ID`);
-
---
--- AUTO_INCREMENT de las tablas volcadas
---
-
---
--- AUTO_INCREMENT de la tabla `login`
---
-ALTER TABLE `login`
-  MODIFY `ID` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
---
--- AUTO_INCREMENT de la tabla `registro`
---
-ALTER TABLE `registro`
-  MODIFY `ID` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
---
--- AUTO_INCREMENT de la tabla `seccion`
---
-ALTER TABLE `seccion`
-  MODIFY `ID` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

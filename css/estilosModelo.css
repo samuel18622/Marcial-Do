@@ -9,10 +9,8 @@
     height: 0px;
 }
 .dire{
-	width: 10%
-	height:5vh;
-	overflow: hidden;
-	margin: auto;
+    overflow: hidden;
+    margin: 25% auto 2%;
 }
 .quieto{
 	overflow: hidden;
@@ -125,6 +123,7 @@
 	background-color: rgb(107,18,99);
 	padding: 0 4%;
 	color: white;
+	margin-top: 8%;
 }
 .more{
 	position: absolute !important;
@@ -246,10 +245,6 @@ body{
 	top: 230px;
 	right: 90px;
 }
-.puente{
-	position: absolute;
-	left: 0px;
-}
 .cerca1{
 	position: absolute;
     bottom: 110px;
@@ -284,7 +279,22 @@ body{
 	overflow: hidden;
 	z-index: 1;
 }
-
+.leecam{
+	width: 478px;
+	height: 595px;
+	animation: camlee 1s steps(9) infinite running;
+	position: absolute;
+	left: 0;
+    top: 5vh;
+	background-image: url("../img/caminalee.png");
+	overflow: hidden;
+	z-index: 5;
+}
+@keyframes camlee{
+	100%{
+		background-position: -4302px top;
+	}
+}
 @keyframes nube{
 	0%{top: 2%;
 		left: 0px;
@@ -300,7 +310,7 @@ body{
 }
 @keyframes bandera{
 	100%{
-		background-position: -290px top;
+		background-position: -164px top;
 	}
 
 }
@@ -339,6 +349,9 @@ body{
 .BJuego{
 	cursor: pointer;
 }
+.BJuego:hover{
+	color: red;
+}
 .vIni{text-align: center;
 	font-size: 38px;
 	float: left;
@@ -364,8 +377,11 @@ body{
 	color: rgb(223,19,6);
 	font-size: 85%;
 }
+.infor{
+	background-color: #959594;
+}
 .informacion h3{
-	color: black;
+	color: white;
 	font-size: 75%;
 }
 .boton{
@@ -390,12 +406,6 @@ body{
 }
 .b6:hover{
 	color: white !important
-}
-.F1{
-	background-image: url(../img/Pins.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
 }
 .N1{
 	background-image: url(../img/p_inicio.jpg);
@@ -448,6 +458,7 @@ body{
 	font-size: 82%;
 }
 .dojoJapones{
+	margin-top: 5.4%;
 	width: 703px;
 	height: 411px;
 	background-image: url("../img/dojoani.png");
@@ -473,7 +484,7 @@ body{
 	top: 0px;
 }
 .muralla2{
-	width: 90%;
+	width: 78%;
 }
 .casa{
 	width: 33%;
@@ -481,7 +492,6 @@ body{
 }
 .templo{
 	width: 40%;
-    margin-top: 2%;
 }
 .temploJ{
 	width: 100%;
@@ -510,6 +520,7 @@ body{
 .tex{
 	padding: 3%;
 	text-align: justify;
+	font-size: 22px !important;
 }
 .inf{
 	display: none;
@@ -589,27 +600,28 @@ body{
 	top: 0;
 }
 .bandera{
- width: 145px;
- height: 130px;
+ width: 82px;
+ height: 74px;
  position: absolute;
- background-image: url("../img/banderaani.png");
+ background-image: url("../img/banderani.png");
  animation: bandera 1s steps(2) infinite running;
- top: 45%;
+ top: 60%;
  right: 47%;
 }
 .an1970{
 	display: none;
 }
 .texto1970{
-    width:40%;
-    height:63vh;
+    width: 40%;
+    height: 70vh;
     left: 30%;
     border-radius: 3%;
-	position: absolute;
+    position: absolute;
+    z-index: 4;
     display: none;
 }
 .contenido{
-	height: 53vh;
+	height: 61vh;
 	width: 100%;
 	float: left;
 	margin-bottom: 1%;
@@ -629,6 +641,7 @@ body{
 	width: 86%;
 	height: 100vh;
 	display: none;
+	z-index: 4;
 }
 .animacion{
 	margin-top: 5%;

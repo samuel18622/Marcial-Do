@@ -41,12 +41,12 @@ mysqli_close($link);
 			<button class="boton ade"><b>Adelante</b></button>
 		</article>
 	</section>
-	<section class="infor vIni">
+	<section class="infor vIni F1">
 			<a href="php/login.php" class="btn BB ini">ingresar</a>
 			<a href="contacto.php" class="btn BT C fijo">C</a>
 			<a href="registro.php" class="btn BB R in">R</a>
 			
-		<article class="informacion i2"><div class="leecam"></div>
+		<article class="informacion i2">
 			<h3>Para comenzar ésta grandiosa aventura por el tiempo recuerda avanzar con la flecha en dirección hacia la derecha y para retroceder con la flecha en dirección izquierda			
 			</h3>
 			<div class="dire"><img src="img/fle.png"></div>
@@ -80,7 +80,7 @@ mysqli_close($link);
 				<video src="video/animacion.mp4" controls muted width="100%"></video>
 			</div>
 	</section>
-		<section id="af23" class="ventanatexto">
+		<section class="ventanatexto">
 			<div class="texto23ac p_23aC">
 				<img src="<?php echo $row1['imagen']; ?>" width="100%">
 				<div></div>
@@ -114,7 +114,7 @@ mysqli_close($link);
 			<button class="btnSalir S1">X</button>
 		<div class="flecha1 n1"><i class="far fa-arrow-alt-circle-up"></i></div>
 
-		<section id="af1944" class="historieta">
+		<section class="historieta">
 			<div class="a1944">
 			<div>
 			<img src="img/pa_1944.jpg" width="100%" height="100%"></div>
@@ -168,7 +168,7 @@ mysqli_close($link);
 			<button class="btnSalir S2">X</button>
 		<div class="flecha1 f1"><i class="far fa-arrow-alt-circle-up"></i></div>
 		
-		<section id="af1950" class="historieta">
+		<section class="historieta">
 			<div class="a1950">
 			<div>
 			<img src="img/pa_1950.jpg" width="100%" height="100%"></div>
@@ -207,11 +207,11 @@ mysqli_close($link);
 				<div class="objeto3 nube"><img src="img/nube3.png"></div>
 				<div class="objeto2 nube"><img src="img/nube2.png"></div>
 		<h1>Año 1970</h1>
-		<div href="#af1970" class="banderas">
+		<div class="banderas">
 		<img class="bandera1" src="img/banderas.png" width="100%">
-		<div  class="bandera"></div></div>
+		<div class="bandera"></div></div>
 		
-		<article id="af1970" class="texto1970" >
+		<article class="texto1970" >
 			<div class="contenido">
 				<button class="btnSalir S3">X</button>
 			<img class="i1970" src="<?php echo $row2['imagen']; ?>" width="100%">
@@ -263,8 +263,6 @@ mysqli_close($link);
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script defer src="js/jquery-3.3.1.min.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-<script defer src="js/jquery.easing.1.3.js"></script>
-<script defer src="js/jquery.easing.compatibility.js"></script>
 <script defer src="js/codigo.js"></script>
 </body>
 </html>
