@@ -135,6 +135,7 @@
 .btn{
 	color: white !important;
 	border-style: none !important;
+	z-index: 2;
 }
 .vmas{
 	margin: auto !important;
@@ -190,7 +191,8 @@ body{
 	width: 700%;
 	height: 100vh;
     display: none;
-    overflow-y: hidden !important;
+    margin: 0 !important;
+    overflow: hidden !important;
     transition: all 1s ease-in-out;
 }
 .LShan{
@@ -258,23 +260,57 @@ body{
     right: 0;
 }
 .objeto1{
-	left: 40px;
-	top: 50px;
+	animation: nube 460s  infinite running;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	top: 10px;
 }
 .objeto2{
-	top: 80px;
-	left: 800px;
+	top: 50px;
+	animation: nube2 420s  infinite running;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
 }
 .objeto3{
-	right: 300px !important;
-	top: 40px;
+	top: 120px;
+	animation: nube3 380s  infinite running;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
 }
 .objeto4{
-	right: 50px;
-	top: 20px;
+	top: 60px;
+	animation: nube4 340s  infinite running;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
 }
-.nube{
-	animation: nube 800s  infinite running;
+.objeto5{
+	top: 100px;
+	animation: nube5 300s  infinite running;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+}
+.objeto6{
+	top: 40px;
+	animation: nube6 270s  infinite running;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+}
+.objeto7{
+	top: 80px;
+	animation: nube7 240s  infinite running;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+}
+.objeto8{
+	top: 40px;
+	animation: nube8 200s  infinite running;
 	position: absolute;
 	overflow: hidden;
 	z-index: 1;
@@ -296,11 +332,67 @@ body{
 	}
 }
 @keyframes nube{
-	0%{top: 2%;
+	0%{
 		left: 0px;
 	}
 	100%{
-		left: 30000px;
+		left: 8000px;
+	}
+}
+@keyframes nube2{
+	0%{
+		left: 500px;
+	}
+	100%{
+		left: 8000px;
+	}
+}
+@keyframes nube3{
+	0%{
+		left: 1300px;
+	}
+	100%{
+		left: 8000px;
+	}
+}
+@keyframes nube4{
+	0%{
+		left: 2200px;
+	}
+	100%{
+		left: 8000px;
+	}
+}
+@keyframes nube5{
+	0%{
+		left: 3000px;
+	}
+	100%{
+		left: 8000px;
+	}
+}
+@keyframes nube6{
+	0%{
+		left: 3800px;
+	}
+	100%{
+		left: 8000px;
+	}
+}
+@keyframes nube7{
+	0%{
+		left: 4600px;
+	}
+	100%{
+		left: 8000px;
+	}
+}
+@keyframes nube8{
+	0%{
+		left: 5800px;
+	}
+	100%{
+		left: 8000px;
 	}
 }
 @keyframes LeeShan{
@@ -342,6 +434,7 @@ body{
 	width: 16.6%;
 	height: 100vh;
 	position: relative;
+	z-index:2;
 }
 .Juego{
 	margin-right: 0px !important;
@@ -487,8 +580,15 @@ body{
 	width: 78%;
 }
 .casa{
-	width: 33%;
+	width: 33.3%;
     float: left;
+}
+.cas1{
+	margin-top: 5vh;
+}
+.cas2{
+	margin-top: 2vh;
+	width: 33.4% !important;
 }
 .templo{
 	width: 40%;
