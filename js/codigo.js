@@ -1,13 +1,6 @@
 $(document).ready(function(){
 
 $('body').addClass('quieto');
-$('.julio a').click(function(e){
-		e.preventDefault(); 
-		var atributo = $(this).attr('href');
-		$('body, html').stop().animate({
-			scrollTop : $(atributo).offset().top
-		},1000, 'easeOutQuart');
-});
 
 function andar() {
 	document.onkeydown = andar
@@ -41,6 +34,11 @@ function parar() {
 $('.M-Do').click(function(){
 	$('.M-Do').toggle('2000');
 	$('.inicio').show('fast');
+	function saludo() {
+$('.perga').css('animationPlayState','running' );	}
+	
+
+	setInterval(saludo, 1000);
 });
 $('.ade').click(function(){
 	$('.inicio').toggle('2000');
@@ -115,7 +113,7 @@ $('.b6').click(function(){
 		$('.LShans').css('opacity','0');
 	},
 	mouseenter: function(){
-		$(this).animate({opacity: '0.5'}, 200);
+		$(this).animate({opacity: '0.9'}, 200);
 	},
 	mouseleave: function(){
 		$(this).animate({opacity: '1'}, 200);

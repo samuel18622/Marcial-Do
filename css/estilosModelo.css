@@ -8,8 +8,33 @@
 ::-webkit-scrollbar {
     height: 0px;
 }
+.perga{
+	position: absolute;
+	right: 10%;
+	width: 136px;
+	height: 356px;
+	background-image: url("../img/pergamino.png");
+    animation: play 0.4s steps(5) forwards;
+    animation-play-state: paused;
+}
+@keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -674px; }
+}
+.popap{
+	width: 100%;
+	height: 100vh;
+	z-index: 9;
+	display: none;
+	background-color: rgba(00,00,00,0.8);
+	position: fixed;
+}
 .dire{
     overflow: hidden;
+    width: 183px;
+    height: 71px;
+    background-image: url("../img/fleani.png");
+    animation: direcc 1s steps(6) infinite running;
     margin: 25% auto 2%;
 }
 .quieto{
@@ -128,6 +153,12 @@
 .more{
 	position: absolute !important;
 	right: 0 !important;
+	width:60px;
+	height:59px;
+	overflow:hidden;
+	background-image: url(../img/iconoani.png);
+	animation: sinop 1s steps(5) infinite running;
+
 }
 .BT{
 	background-color: rgb(223,19,6) !important;
@@ -326,6 +357,16 @@ body{
 	overflow: hidden;
 	z-index: 5;
 }
+@keyframes sinop{
+	100%{
+		background-position: -300px top;
+	}
+}
+@keyframes direcc{
+	100%{
+		background-position: -1098px top;
+	}
+}
 @keyframes camlee{
 	100%{
 		background-position: -4302px top;
@@ -515,7 +556,7 @@ body{
 }
 .ventana{
 	position: absolute;
-	background-color:black;
+	background-color:rgba(00,00,00,0.8);
 	top: -1000px;
 	width: 86%;
 	height: 100vh;
@@ -606,13 +647,12 @@ body{
 	overflow: hidden;
 }
 .ventanatexto{
-	position: absolute;
 	background-color:rgba(00,00,00,0.7);
-	top: 0px;
-	width: 86%;
-    height: 100vh;	
+	width: 100%;
+	height: 100vh;
+	z-index: 9;
 	display: none;
-	z-index: 8;
+	position: fixed;
 }
 .p_23aC{
 	background-color: transparent !important;
@@ -634,9 +674,19 @@ body{
 }
 .SecHistorieta{
 	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 9;
+	background-color: rgba(00,00,00,0.8);
 }
 .SecHistorieta2{
 	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 9;
+	background-color: rgba(00,00,00,0.8);
 }
 .historieta{
 	z-index: 4;
@@ -716,8 +766,8 @@ body{
     height: 70vh;
     left: 30%;
     border-radius: 3%;
-    position: absolute;
-    z-index: 4;
+    position: fixed;
+    z-index: 9;
     display: none;
 }
 .contenido{
@@ -735,13 +785,13 @@ body{
 	float: left;
 }
 .ventana2{
-	position: absolute;
-	background-color:black;
+	position: fixed;
+	background-color:rgba(00,00,00,0.8);
 	top: 0px;
-	width: 86%;
+	width: 100%;
 	height: 100vh;
 	display: none;
-	z-index: 4;
+	z-index: 9;
 }
 .animacion{
 	margin-top: 5%;
