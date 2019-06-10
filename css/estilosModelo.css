@@ -8,26 +8,249 @@
 ::-webkit-scrollbar {
     height: 0px;
 }
+/*Body*/
+@font-face{
+	font-family:Acme;
+ src: url("../font/Acme-Regular.ttf");
+}
+.info{
+	display: none;
+}
+body{
+	overflow-y: hidden;
+	 font-family: "Acme" !important;
+}
+#contenedorMayor{
+	background-image: url(../img/fondoM.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	width: 700%;
+	height: 100vh;
+    display: none;
+    margin: 0 !important;
+    overflow: hidden !important;
+    transition: all 1s ease-in-out;
+}
+.contenedorFecha{text-align: center;
+	font-size: 38px;
+	float: left;
+	width: 16.6%;
+	height: 100vh;
+	position: relative;
+	z-index:2;
+}
+/*inicio-logo*/
+.M-Do{
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	text-align: center;
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+}
+/*logo*/
+.logo{
+	background-color: black;
+	margin: auto;
+	align-items: center;
+	overflow: hidden;
+	text-align: center;
+}
+/*Botones*/
+.btnSalir{
+	position: absolute;
+	right: 0;
+	background-color: rgb(223,19,6);
+	font-weight: bolder;
+	font-size: 200%;
+	width:4%; 
+	height:8%;
+	cursor: pointer;
+	z-index: 3;
+}
+.btnSalir:hover{
+	color: rgb(107,18,99);
+	font-size: 220%;
+}
+.boton{
+	font-family: Acme !important;
+	cursor: pointer;
+    padding: 2%;
+    width: 30%;
+    color: white;
+    font-size: 16px;
+    border-radius: 10%;
+    background-color: rgb(107,18,99);
+    z-index: 3;
+    margin: 0 35%;
+}
+.boton:hover{
+	color: rgb(223,19,6);
+	font-size: 18px;
+}
+.b6{
+	padding: 1% !important;
+	background-color: rgb(223,19,6) !important;
+	margin-bottom: 2% !important;
+}
+.b6:hover{
+	color: white !important
+}
+.R{
+	top: 40px;	
+	width:34px;
+ 	word-wrap: break-word;
+  	text-align:center;
+}
+.C{
+	top: 40px !important;
+	left: 40px !important;
+	width:34px;
+ 	word-wrap: break-word;
+	text-align:center;
+}
+.b2{
+	font-size: 80% !important;
+}
+.b2:hover{
+	font-size: 82% !important;
+}
+.S1{
+	top: 10px;
+ 	right: 180px !important;
+}
+.S2{
+	top: 10px;
+ 	right: 180px !important;
+}
+.S3{
+	width: 8% !important;
+    border-radius: 10px;
+    height: 10% !important;
+}
+.fijo{
+	position: fixed;
+	z-index: 5;
+	float: right !important;
+}
+.BB{
+	background-color: rgb(107,18,99) !important;
+}
+.BM{
+	background-color: transparent !important;
+	overflow: hidden;
+	width: 80px;
+    margin-top: 20px;
+}
+.BS{
+	background-color: rgb(107,18,99);
+	padding: 0 4%;
+	color: white;
+	margin-top: 8%;
+}
+.more{
+	position: absolute !important;
+	right: 0 !important;
+	width:60px;
+	height:59px;
+	overflow:hidden;
+	background-image: url(../img/iconoani.png);
+	animation: sinop 1s steps(5) infinite running;
+}
+.BT{
+	background-color: rgb(223,19,6) !important;
+}
+.btn{
+	color: white !important;
+	border-style: none !important;
+	z-index: 2;
+}
+.btn:hover{
+	opacity: 0.5;
+	transition: 0.5s;
+}
+.vmas{
+	margin: auto !important;
+}
+.an1970{
+	display: none;
+	margin: 0 35%;
+}
+/*Ventana de inicio*/
+.vIni{text-align: center;
+	font-size: 38px;
+	float: left;
+	width: 100%;
+	height: 100vh;
+	display: none;
+ }
+ .N1{
+	background-image: url(../img/p_inicio.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
 .perga{
 	position: absolute;
 	right: 10%;
-	width: 136px;
-	height: 356px;
-	background-image: url("../img/pergamino.png");
-    animation: play 0.4s steps(5) forwards;
+	top: -20vh;
+	transition: 1s linear;
+	width: 158px;
+	height: 372px;
+	background-image: url("../img/pergaminoani.png");
+    animation: play 0.4s steps(6) forwards;
     animation-play-state: paused;
+}
+.saludo{
+	position: absolute;
+	left: 10%;
+	top: 8vh;
+	width: 345.44px;
+	height: 480px;
+	background-image: url("../img/saludo.png");
+    animation: playsaludo 1s steps(9) infinite running;
 }
 @keyframes play {
    from { background-position:    0px; }
-     to { background-position: -674px; }
+     to { background-position: -948px; }
 }
-.popap{
-	width: 100%;
-	height: 100vh;
-	z-index: 9;
-	display: none;
-	background-color: rgba(00,00,00,0.8);
-	position: fixed;
+@keyframes playsaludo{
+	100%{
+		background-position: -3109px top;
+	}
+}
+.informacion{
+	margin-top: 6%; 
+	width: 30%;
+	height: 60vh;
+	color: white;
+	background: rgba(10,30,50,0.8);
+	border-radius: 5%;
+	padding: 3%;
+	font-size: 80%;
+	text-align: center;
+}
+/*Ventana de instruciones*/
+ .i2{
+ 	background: #6F3974 !important;
+ }
+ .leecam{
+	width: 478px;
+	height: 595px;
+	animation: camlee 1s steps(9) infinite running;
+	position: absolute;
+	left: 0;
+    top: 5vh;
+	background-image: url("../img/caminalee.png");
+	overflow: hidden;
+	z-index: 5;
+}
+@keyframes camlee{
+	100%{
+		background-position: -4302px top;
+	}
 }
 .dire{
     overflow: hidden;
@@ -37,12 +260,314 @@
     animation: direcc 1s steps(6) infinite running;
     margin: 25% auto 2%;
 }
+@keyframes direcc{
+	100%{
+		background-position: -1098px top;
+	}
+}
+/*Ventana bandera*/
+.texto1970{
+    width: 40%;
+    height: 70vh;
+    left: 30%;
+    border-radius: 3%;
+    position: fixed;
+    z-index: 9;
+    margin-top: 15vh;
+    display: none;
+}
+.contenido{
+	height: 61vh;
+	width: 100%;
+	float: left;
+	margin-bottom: 1%;
+	background-color: rgba(255,255,255,0.6);
+}
+.tex2{
+	padding: 20px;
+	text-align: justify;
+	font-size: 23px;
+	display: none;
+	float: left;
+}
+.ventana2{
+	position: fixed;
+	background-color:rgba(00,00,00,0.8);
+	top: 0px;
+	width: 100%;
+	height: 100vh;
+	display: none;
+	z-index: 9;
+}
+.animacion{
+	margin-top: 5%;
+	width: 55%;
+	height: 80vh;
+	background-color: white;
+}
+/*Ventana Historieta*/
+.SecHistorieta{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 9;
+	background-color: rgba(00,00,00,0.8);
+}
+.SecHistorieta2{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 9;
+	background-color: rgba(00,00,00,0.8);
+}
+.flecha1{
+   margin-top: 1.8%;
+   color: white;
+   cursor: pointer;
+	font-size: 250%;
+	text-align: center;
+}
+.flecha1:hover{
+	color: rgb(223,19,6);
+}
+.flecha2{
+	color: white;
+	cursor: pointer;
+	font-size: 250%;
+    text-align: center;
+   	border: none;
+ }
+ .flecha2:hover{
+	color: rgb(107,18,99);
+}
+.historieta{
+	z-index: 4;
+	width: 54%;
+	height: 70vh;
+	margin-top: 1.8%;
+	margin-bottom: 1.8%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	box-shadow:  7px 7px 15px gray;
+	overflow: hidden;
+}
+.sinop{
+	display: none;
+	position: absolute;
+	width: 80%;
+	font-size: 1.5em;
+    text-align: center;
+	margin-left: 10%;
+	height: 74vh;
+	background-color: rgba(255,255,255,0.8);
+	padding: 18% 1.5%;
+}
+.a1950{
+	transition: all 1s ease-in-out;
+}
+.a1944{
+	transition: all 1s ease-in-out;
+}
+/*Ventana Dojo*/
+.ventanatexto{
+	background-color:rgba(00,00,00,0.7);
+	width: 100%;
+	height: 100vh;
+	z-index: 9;
+	display: none;
+	position: fixed;
+}
+.texto23ac{
+	width: 45%;
+    height: 80vh;
+	background-color: white;
+	font-size: 72%;
+	margin-top: 2%;
+	overflow: hidden;
+
+}
+.p_23aC{
+	background-color: transparent !important;
+}
+.inf{
+	display: none;
+	border-radius: 3%;
+}
+/*personaje*/
+.LShan{
+	width: 125px;
+	height: 202px;
+	z-index: 5;
+	background: url(../img/spriteC.png);
+	margin-top: 26%;
+	margin-left: 6%;
+	position: fixed;
+	animation: LeeShan 1s steps(9) infinite running;
+	display: none;
+}
+.LShans{
+	width: 125px;
+	height: 202px;
+	z-index: 5;
+	background: url(../img/spriteC2.png);
+	margin-top: 26%;
+	margin-left: 6%;
+	position: fixed;
+	animation: LeeShans 1s steps(9) infinite running;
+	display: none;
+}
+.LShanP{
+	display: block;
+	width: 125px;
+	height: 202px;
+	background: url(../img/spriteL.png);
+	z-index: 5;
+	margin-top: 26%;
+	margin-left: 6%;
+	position: fixed;
+}
+@keyframes LeeShan{
+	100%{
+		background-position: -1125px top;
+	}
+}
+@keyframes LeeShans{
+	100%{
+		background-position: 1125px top;
+	}
+
+}
 .quieto{
 	overflow: hidden;
 }
 .quieto2{
 	overflow: hidden !important;
 }
+/*nubes*/
+.objeto1{
+	animation: nube 650s  infinite running;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	top: 10px;
+}
+.objeto2{
+	top: 50px;
+	animation: nube2 590s  infinite running;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+}
+.objeto3{
+	top: 120px;
+	animation: nube3 530s  infinite running;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+}
+.objeto4{
+	top: 60px;
+	animation: nube4 480s  infinite running;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+}
+.objeto5{
+	top: 100px;
+	animation: nube5 420s  infinite running;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+}
+.objeto6{
+	top: 40px;
+	animation: nube6 370s  infinite running;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+}
+.objeto7{
+	top: 80px;
+	animation: nube7 320s  infinite running;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+}
+.objeto8{
+	top: 40px;
+	animation: nube8 280s  infinite running;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+}
+@keyframes nube{
+	0%{
+		left: 0px;
+	}
+	100%{
+		left: 8000px;
+	}
+}
+@keyframes nube2{
+	0%{
+		left: 1100px;
+	}
+	100%{
+		left: 8000px;
+	}
+}
+@keyframes nube3{
+	0%{
+		left: 1700px;
+	}
+	100%{
+		left: 8000px;
+	}
+}
+@keyframes nube4{
+	0%{
+		left: 2300px;
+	}
+	100%{
+		left: 8000px;
+	}
+}
+@keyframes nube5{
+	0%{
+		left: 3000px;
+	}
+	100%{
+		left: 8000px;
+	}
+}
+@keyframes nube6{
+	0%{
+		left: 3800px;
+	}
+	100%{
+		left: 8000px;
+	}
+}
+@keyframes nube7{
+	0%{
+		left: 4600px;
+	}
+	100%{
+		left: 8000px;
+	}
+}
+@keyframes nube8{
+	0%{
+		left: 5800px;
+	}
+	100%{
+		left: 8000px;
+	}
+}
+/**/
 .e{
 	text-align: center;
 	position: fixed;
@@ -120,8 +645,6 @@
 	background: white;
 	margin-left: 90%;
 	z-index: 3;
-	
-
 }
 .usu{
 	margin: 5% auto !important;
@@ -130,67 +653,9 @@
 	background-image: url(../img/1950Tran.jpg);
 	background-size: cover;
 }
-.fijo{
-	position: fixed;
-	z-index: 5;
-	float: right !important;
-}
-.BB{
-	background-color: rgb(107,18,99) !important;
-}
-.BM{
-	background-color: transparent !important;
-	overflow: hidden;
-	width: 80px;
-    margin-top: 20px;
-}
-.BS{
-	background-color: rgb(107,18,99);
-	padding: 0 4%;
-	color: white;
-	margin-top: 8%;
-}
-.more{
-	position: absolute !important;
-	right: 0 !important;
-	width:60px;
-	height:59px;
-	overflow:hidden;
-	background-image: url(../img/iconoani.png);
-	animation: sinop 1s steps(5) infinite running;
-
-}
-.BT{
-	background-color: rgb(223,19,6) !important;
-}
-.btn{
-	color: white !important;
-	border-style: none !important;
-	z-index: 2;
-}
-.vmas{
-	margin: auto !important;
-}
 .in{
 	left: 0 !important;
 	position: absolute !important;
-}
-.R{
-	top: 40px;	
-	width:34px;
- 	word-wrap: break-word;
-  	text-align:center;
-}
-.C{
-	top: 40px !important;
-	left: 40px !important;
-	width:34px;
- 	word-wrap: break-word;
-	text-align:center;
-}
-.btn:hover{
-	opacity: 0.5;
-	transition: 0.5s;
 }
 .login{
 	width: 50%;
@@ -203,279 +668,157 @@
 .lo{
 	color: white;
 }
-@font-face{
-	font-family:Acme;
- src: url("../font/Acme-Regular.ttf");
-}
-.info{
-	display: none;
-}
-body{
-	overflow-y: hidden;
-	 font-family: "Acme" !important;
-}
-#contenedorMayor{
-	background-image: url(../img/fondoM.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-	width: 700%;
-	height: 100vh;
-    display: none;
-    margin: 0 !important;
-    overflow: hidden !important;
-    transition: all 1s ease-in-out;
-}
-.LShan{
-	width: 125px;
-	height: 202px;
-	z-index: 5;
-	background: url(../img/spriteC.png);
-	margin-top: 26%;
-	margin-left: 6%;
-	position: fixed;
-	animation: LeeShan 1s steps(9) infinite running;
-	display: none;
-}
-.LShans{
-	width: 125px;
-	height: 202px;
-	z-index: 5;
-	background: url(../img/spriteC2.png);
-	margin-top: 26%;
-	margin-left: 6%;
-	position: fixed;
-	animation: LeeShans 1s steps(9) infinite running;
-	display: none;
-}
-.LShanP{
-	display: block;
-	width: 125px;
-	height: 202px;
-	background: url(../img/spriteL.png);
-	z-index: 5;
-	margin-top: 26%;
-	margin-left: 6%;
-	position: fixed;
-}
+/*objetos sitio*/
 .casita1{
 	position: absolute;
     left: 50px;
     top: 165px;
+    animation: casa 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes casa{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 .casita2{
 	position: absolute;
     right: 50px;
     top: 190px;
+    animation: casaT 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes casaT{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 .columna1{
     position: absolute;
     left: 90px;
     top: 230px;
+    animation: columna 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes columna{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 .columna2{
 	position: absolute;
 	top: 230px;
 	right: 90px;
+animation: columnaT 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes columnaT{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 .cerca1{
 	position: absolute;
     bottom: 110px;
-    z-index: 2;
+    z-index: 3;
     right: 0;
+	animation: cerca 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes cerca{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 .cerca2{
 	position: absolute;
     bottom: 110px;
-    z-index: 2;
+    z-index: 3;
     right: 0;
+	animation: cercaT 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
-.objeto1{
-	animation: nube 460s  infinite running;
-	position: absolute;
-	overflow: hidden;
-	z-index: 1;
-	top: 10px;
+@keyframes cercaT{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
-.objeto2{
-	top: 50px;
-	animation: nube2 420s  infinite running;
-	position: absolute;
-	overflow: hidden;
-	z-index: 1;
+.templos{
+	width: 40%;
+    position: absolute;
+    overflow: hidden;
+    left: 32%;
+    top: 12%;
+    z-index: 3;
+	animation: templos 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
-.objeto3{
-	top: 120px;
-	animation: nube3 380s  infinite running;
-	position: absolute;
-	overflow: hidden;
-	z-index: 1;
+@keyframes templos{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
-.objeto4{
-	top: 60px;
-	animation: nube4 340s  infinite running;
-	position: absolute;
+.plataforma{
+	width: 70%;
 	overflow: hidden;
-	z-index: 1;
+	margin-top: 22%;
+	animation: plataforma 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
-.objeto5{
-	top: 100px;
-	animation: nube5 300s  infinite running;
-	position: absolute;
-	overflow: hidden;
-	z-index: 1;
-}
-.objeto6{
-	top: 40px;
-	animation: nube6 270s  infinite running;
-	position: absolute;
-	overflow: hidden;
-	z-index: 1;
-}
-.objeto7{
-	top: 80px;
-	animation: nube7 240s  infinite running;
-	position: absolute;
-	overflow: hidden;
-	z-index: 1;
-}
-.objeto8{
-	top: 40px;
-	animation: nube8 200s  infinite running;
-	position: absolute;
-	overflow: hidden;
-	z-index: 1;
-}
-.leecam{
-	width: 478px;
-	height: 595px;
-	animation: camlee 1s steps(9) infinite running;
-	position: absolute;
-	left: 0;
-    top: 5vh;
-	background-image: url("../img/caminalee.png");
-	overflow: hidden;
-	z-index: 5;
+@keyframes plataforma{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 @keyframes sinop{
 	100%{
 		background-position: -300px top;
 	}
 }
-@keyframes direcc{
-	100%{
-		background-position: -1098px top;
-	}
-}
-@keyframes camlee{
-	100%{
-		background-position: -4302px top;
-	}
-}
-@keyframes nube{
-	0%{
-		left: 0px;
-	}
-	100%{
-		left: 8000px;
-	}
-}
-@keyframes nube2{
-	0%{
-		left: 500px;
-	}
-	100%{
-		left: 8000px;
-	}
-}
-@keyframes nube3{
-	0%{
-		left: 1300px;
-	}
-	100%{
-		left: 8000px;
-	}
-}
-@keyframes nube4{
-	0%{
-		left: 2200px;
-	}
-	100%{
-		left: 8000px;
-	}
-}
-@keyframes nube5{
-	0%{
-		left: 3000px;
-	}
-	100%{
-		left: 8000px;
-	}
-}
-@keyframes nube6{
-	0%{
-		left: 3800px;
-	}
-	100%{
-		left: 8000px;
-	}
-}
-@keyframes nube7{
-	0%{
-		left: 4600px;
-	}
-	100%{
-		left: 8000px;
-	}
-}
-@keyframes nube8{
-	0%{
-		left: 5800px;
-	}
-	100%{
-		left: 8000px;
-	}
-}
-@keyframes LeeShan{
-	100%{
-		background-position: -1125px top;
-	}
-}
 @keyframes bandera{
 	100%{
 		background-position: -164px top;
 	}
-
-}
-@keyframes dojo{
-	100%{
-		background-position: -1406px top;
-	}
-
-}
-
-@keyframes LeeShans{
-	100%{
-		background-position: 1125px top;
-	}
-
-}
-.M-Do{
-	width: 100%;
-	height: 100vh;
-	background-color: black;
-	text-align: center;
-	display: flex;
-	position: absolute;
-	flex-direction: column;
-}
-.contenedorFecha{text-align: center;
-	font-size: 38px;
-	float: left;
-	width: 16.6%;
-	height: 100vh;
-	position: relative;
-	z-index:2;
 }
 .Juego{
 	margin-right: 0px !important;
@@ -486,31 +829,6 @@ body{
 .BJuego:hover{
 	color: red;
 }
-.vIni{text-align: center;
-	font-size: 38px;
-	float: left;
-	width: 100%;
-	height: 100vh;
-	display: none;
- }
- .i2{
- 	background: #6F3974 !important;
- }
-.informacion{
-	margin-top: 6%; 
-	width: 30%;
-	height: 60vh;
-	color: white;
-	background: rgba(10,30,50,0.8);
-	border-radius: 5%;
-	padding: 3%;
-	font-size: 80%;
-	text-align: center;
-}
-.informacion h1{
-	color: rgb(223,19,6);
-	font-size: 85%;
-}
 .infor{
 	background-color: #959594;
 }
@@ -518,41 +836,52 @@ body{
 	color: white;
 	font-size: 75%;
 }
-.boton{
-	font-family: Acme !important;
-	cursor: pointer;
-    padding: 2%;
-    width: 30%;
-    color: white;
-    font-size: 16px;
-    border-radius: 10%;
-    background-color: rgb(107,18,99);
-    z-index: 3;
+.nnnn{animation: texto 6s infinite running;
 }
-.boton:hover{
-	color: rgb(223,19,6);
-	font-size: 18px;
+@keyframes texto{
+	0%{
+	}
+	25%{
+			text-shadow: -2px 0 10px white, 2px 0 10px white, 0 2px 10px white, 0 -2px 10px white;
+	}
+	50%{
+			text-shadow: -4px 0 10px white, 4px 0 10px white, 0 4px 10px white, 0 -4px 10px white;		
+	}
+	75%{
+			text-shadow: -2px 0 10px white, 2px 0 10px white, 0 2px 10px white, 0 -2px 10px white;
+	}
+	100%{
+	}
 }
-.b6{
-	padding: 1% !important;
-	background-color: rgb(223,19,6) !important;
-	margin-bottom: 2% !important;
+@keyframes sombraa{
+	0%{
+	}
+	25%{
+   		 filter: drop-shadow(0px 0px 8px white);
+	}
+	50%{
+	    filter: drop-shadow(0px 0px 12px white);
+	}
+	75%{
+	    filter: drop-shadow(0px 0px 8px white);
+	}
+	100%{
+	}
 }
-.b6:hover{
-	color: white !important
-}
-.N1{
-	background-image: url(../img/p_inicio.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-}
-.logo{
-	background-color: black;
-	margin: auto;
-	align-items: center;
-	overflow: hidden;
-	text-align: center;
+@keyframes sombra{
+	0%{
+	}
+	25%{
+			box-shadow: -2px 0 10px white, 2px 0 10px white, 0 2px 10px white, 0 -2px 10px white;
+	}
+	50%{
+			box-shadow: -4px 0 10px white, 4px 0 10px white, 0 4px 10px white, 0 -4px 10px white;		
+	}
+	75%{
+			box-shadow: -2px 0 10px white, 2px 0 10px white, 0 2px 10px white, 0 -2px 10px white;
+	}
+	100%{
+	}
 }
 .ventana{
 	position: absolute;
@@ -568,38 +897,28 @@ body{
 	height: 80vh;
 	background-color: white;
 }
-.btnSalir{
-	position: absolute;
-	right: 0;
-	background-color: rgb(223,19,6);
-	font-weight: bolder;
-	font-size: 80%;
-	width:4%; 
-	height:8%;
-	cursor: pointer;
-	z-index: 3;
-}
-.S1{
-	top: 10px;
- 	right: 180px !important;
-}
-.S2{
-	top: 10px;
- 	right: 180px !important;
-}
-.btnSalir:hover{
-	color: rgb(107,18,99);
-	font-size: 82%;
-}
 .dojoJapones{
 	margin-top: 5.4%;
 	width: 703px;
-	height: 411px;
-	background-image: url("../img/dojoani.png");
-	overflow: hidden;
+	height: 420px;
+    padding: 15px;
+    overflow: hidden;
 	cursor: pointer;
-	animation: dojo  1s steps(2) infinite running;
+	animation: Dojo 4s;
+	animation-play-state: paused;
 	z-index: 3;
+}
+.dojoJapones img{
+	filter: drop-shadow(5px 5px 10px white);
+/*animation: sombraa 6s infinite running;*/
+}
+@keyframes Dojo{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 .casajaponesa{
 	width: 80%;
@@ -612,8 +931,19 @@ body{
 .muralla{
 	width: 100%;
     overflow: hidden;
+	animation: muralla 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
-.dojo{
+@keyframes muralla{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}.dojo{
 	width: 100%;
 	top: 0px;
 }
@@ -626,128 +956,141 @@ body{
 }
 .cas1{
 	margin-top: 5vh;
+	animation: casa 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes casa{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 .cas2{
 	margin-top: 2vh;
 	width: 33.4% !important;
+	animation: casaT 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes casaT{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.cas3{
+	animation: Casa 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes Casa{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 .templo{
 	width: 40%;
 }
+.temploisrael{
+	animation: israel 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes israel{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
 .temploJ{
 	width: 100%;
     margin-top: 2.8%;
+	animation: temploj 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
-.texto23ac{
-	width: 45%;
-    height: 80vh;
-	background-color: white;
-	font-size: 72%;
-	margin-top: 2%;
-	overflow: hidden;
-}
-.ventanatexto{
-	background-color:rgba(00,00,00,0.7);
-	width: 100%;
-	height: 100vh;
-	z-index: 9;
-	display: none;
-	position: fixed;
-}
-.p_23aC{
-	background-color: transparent !important;
+@keyframes temploj{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 .tex{
 	padding: 3%;
 	text-align: justify;
 	font-size: 22px !important;
 }
-.inf{
-	display: none;
-	border-radius: 3%;
+.sombra{
+	animation: texto 6s infinite running;
+}
+.sombra2{
+	animation: sombra 6s infinite running;
 }
 .H1{
 	cursor: pointer;
+	animation: botonc 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes botonc{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 .H2{
 	cursor: pointer;
+	animation: sombra 6s infinite running;
 }
-.SecHistorieta{
-	display: none;
-	position: fixed;
-	width: 100%;
-	height: 100vh;
-	z-index: 9;
-	background-color: rgba(00,00,00,0.8);
-}
-.SecHistorieta2{
-	display: none;
-	position: fixed;
-	width: 100%;
-	height: 100vh;
-	z-index: 9;
-	background-color: rgba(00,00,00,0.8);
-}
-.historieta{
-	z-index: 4;
-	width: 50%;
-	height: 70vh;
-	margin-top: 1.8%;
-	margin-bottom: 1.8%;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-	box-shadow:  7px 7px 15px gray;
-	overflow: hidden;
-}
-.sinop{
-	display: none;
-	position: absolute;
-	width: 80%;
-	font-size:0.6em;
-	margin-left: 10%;
-	height: 72vh;
-	background-color: white;
-	opacity: 0.8;
-	padding: 18% 1.5%;
-}
-.a1950{
-	transition: all 1s ease-in-out;
-}
-.a1944{
-	transition: all 1s ease-in-out;
-}
-.i1970{
+@keyframes botonh{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}.i1970{
 	display: block;
 }
-.flecha1{
-   margin-top: 1.8%;
-   color: white;
-   cursor: pointer;
-   font-size: 78%;
-   border-radius: 100%;
-}
-.flecha1:hover{
-	color: rgb(223,19,6);
-}
-.flecha2{
-	color: white;
-	cursor: pointer;
-	font-size: 78%;
-   	border-radius: 100%;
-   	border: none;
- }
- .flecha2:hover{
-	color: rgb(107,18,99);
-}
-
 .banderas{
+	z-index: 3;
 	width: 100%;
-	cursor: pointer;
 	overflow: hidden;
 	height: 26%;
 	position: absolute;
 	top: 0;
+	animation: banderas 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes banderas{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 .bandera{
  width: 82px;
@@ -757,69 +1100,11 @@ body{
  animation: bandera 1s steps(2) infinite running;
  top: 60%;
  right: 47%;
-}
-.an1970{
-	display: none;
-}
-.texto1970{
-    width: 40%;
-    height: 70vh;
-    left: 30%;
-    border-radius: 3%;
-    position: fixed;
-    z-index: 9;
-    display: none;
-}
-.contenido{
-	height: 61vh;
-	width: 100%;
-	float: left;
-	margin-bottom: 1%;
-	background-color: rgba(255,255,255,0.6);
-}
-.tex2{
-	padding: 20px;
-	text-align: justify;
-	font-size: 23px;
-	display: none;
-	float: left;
-}
-.ventana2{
-	position: fixed;
-	background-color:rgba(00,00,00,0.8);
-	top: 0px;
-	width: 100%;
-	height: 100vh;
-	display: none;
-	z-index: 9;
-}
-.animacion{
-	margin-top: 5%;
-	width: 55%;
-	height: 80vh;
-	background-color: white;
-}
-.templos{
-	width: 40%;
-    position: absolute;
-    overflow: hidden;
-    left: 32%;
-    top: 15%;
-}
-.plataforma{
-	width: 70%;
-	overflow: hidden;
-	margin-top: 30%;
+ cursor: pointer;
 }
 .ini{
 	float: left;
 }
-
-.btn:hover{
-	opacity: 0.5;
-	transition: 0.5s;
-}
-
 .Ad{
 	padding: 20px;
 	width: 50%;
@@ -834,7 +1119,6 @@ body{
 	width: 80%;
 	margin:auto;
 }
-
 .cabezalista{
 	background-color:rgba(132,8,8,0.4);
 }
@@ -851,7 +1135,6 @@ td{
 }
 .red:hover{
 	text-decoration-line: none;
-
 }
 .blanco{
 	font-weight: bold;
@@ -869,9 +1152,7 @@ td{
 .morado:hover{
 	color: #00BFFF;
 	text-decoration-line: none;
-
 }
-
 input[type=text]{
 	width: 150px;
 border: 2px solid rgb(107,18,99);

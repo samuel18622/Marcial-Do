@@ -34,10 +34,10 @@ function parar() {
 $('.M-Do').click(function(){
 	$('.M-Do').toggle('2000');
 	$('.inicio').show('fast');
+	$('.perga').css('top','5vh');
 	function saludo() {
 $('.perga').css('animationPlayState','running' );	}
 	
-
 	setInterval(saludo, 1000);
 });
 $('.ade').click(function(){
@@ -51,6 +51,15 @@ $('.b6').click(function(){
 	$('#contenedorMayor').show('fast');
 	andar();
 	parar();
+	function casa1() {
+$('.casita1').css('animationPlayState','running' );	}
+	
+	setInterval(casa1, 500);
+	function Dojo() {
+$('.dojoJapones').css('animationPlayState','running' );	}
+	
+	setInterval(Dojo, 1500);
+
 });
 		$('.f1').on('click', function(e){
 			e.preventDefault();
@@ -166,7 +175,7 @@ $(this).text('Contacto');
 	$('.ventanatexto').css('display','none');
 	$('.ventana').css('top', '0').fadeIn('fast');
 	});
-	$('.contenedorFecha .banderas').on({
+	$('.contenedorFecha .banderas .bandera').on({
 		click:
 		function(){
 		$('body').addClass('quieto2');
@@ -178,6 +187,7 @@ $(this).text('Contacto');
 		$('.LShan').fadeOut('fast').css('display','none');
 		$('.LShans').fadeOut('fast').css('display','none');
 		$('.LShans').css('opacity','0');
+		$('.an1970').fadeOut('fast').css('display','none');
 		$('.LShanP').fadeOut('fast').css('display','none');
 	}
 });
@@ -214,16 +224,12 @@ $(this).text('Contacto');
 }); 
 		$('.H2').click(function(){
 		$('body').addClass('quieto2');
-		$(this).css('display','none');
 		$('.SecHistorieta2').fadeIn('fast');
 		$('.LShan').fadeOut('fast');
 		$('.LShans').fadeOut('fast');
 		$('.LShans').css('opacity','0');
 		$('.M2').css('opacity','0');
 		$('.LShanP').fadeOut('fast');
-		$('.f1950').fadeOut('fast');
-		$('.cerca1').fadeOut('fast');
-		$('.casajaponesa').fadeOut('fast');
 }); 
 	$('.btnSalir').click(function(){
 		$('.ventana2').fadeOut('fast');
@@ -322,11 +328,69 @@ $(this).text('Contacto');
 $(window).scroll(function(event) {
   var scrollLeft = $(window).scrollLeft();
   console.log("Horizontal "+scrollLeft);
-  if (scrollLeft > 304) {
-	$(".japones").attr("src","img/dojo.png");
-}if(scrollLeft > 0 && scrollLeft < 304){
-		$(".japones").attr("src","img/dojo.png");
-}if (scrollLeft > 99880) {
+  if (scrollLeft >180) {
+	function casa2() {
+$('.casita2').css('animationPlayState','running' );	}
+	setInterval(casa2, 100);
+}if (scrollLeft >640) {
+	function colm1() {
+$('.columna1').css('animationPlayState','running' );	}
+	setInterval(colm1, 100);
+}if (scrollLeft >1000) {
+	function israel() {
+$('.H1').css('animationPlayState','running' );
+$('.temploisrael').css('animationPlayState','running' );}
+	setInterval(israel, 100);
+}if (scrollLeft >1400) {
+	function colm2() {
+$('.columna2').css('animationPlayState','running' );	}
+	setInterval(colm2, 100);
+}
+if (scrollLeft >2300) {
+	function casi1() {
+$('.cas1').css('animationPlayState','running' );	}
+	setInterval(casi1, 100);
+}
+if (scrollLeft >2600) {
+	function casi2() {
+$('.cas2').css('animationPlayState','running' );	}
+	setInterval(casi2, 100);
+}
+if (scrollLeft >2800) {
+	function casi3() {
+$('.cas3').css('animationPlayState','running' );	}
+	setInterval(casi3, 100);
+}
+if (scrollLeft >2900) {
+	function cer1() {
+$('.cerca1').css('animationPlayState','running' );	}
+	setInterval(cer1, 100);
+}if (scrollLeft >3300) {
+	function templot() {
+$('.temploJ').css('animationPlayState','running' );	}
+	setInterval(templot, 100);
+}if (scrollLeft >3700) {
+	function banderas() {
+$('.banderas').css('animationPlayState','running' );	}
+	setInterval(banderas, 100);
+}if (scrollLeft >3900) {
+	function cercaa() {
+$('.cerca2').css('animationPlayState','running' );	}
+	setInterval(cercaa, 100);
+}if (scrollLeft >5100) {
+	function plataforma() {
+$('.plataforma').css('animationPlayState','running' );	}
+	setInterval(plataforma, 100);
+}if (scrollLeft >5200) {
+	function temploschinos() {
+$('.templos').css('animationPlayState','running' );	}
+	setInterval(temploschinos, 100);
+}if (scrollLeft >6200) {
+	function muralla() {
+$('.muralla').css('animationPlayState','running' );	}
+	setInterval(muralla, 100);
+}
+if(scrollLeft > 99880) {
 	$('.LShan').fadeOut('fast').css('display','none');
 }
 if (scrollLeft < 99880) {
