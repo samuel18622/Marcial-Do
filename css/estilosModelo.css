@@ -207,9 +207,9 @@ body{
 	position: absolute;
 	left: 10%;
 	top: 8vh;
-	width: 345.44px;
-	height: 480px;
-	background-image: url("../img/saludo.png");
+	width: 398.2px;
+	height: 553px;
+	background-image: url("../img/Leesaludo.png");
     animation: playsaludo 1s steps(9) infinite running;
 }
 @keyframes play {
@@ -218,7 +218,7 @@ body{
 }
 @keyframes playsaludo{
 	100%{
-		background-position: -3109px top;
+		background-position: -3584px top;
 	}
 }
 .informacion{
@@ -794,9 +794,9 @@ animation: columnaT 2s ;
 	}
 }
 .plataforma{
-	width: 70%;
-	overflow: hidden;
-	margin-top: 22%;
+	width: 90%;
+    overflow: hidden;
+    margin-top: 18.9%;
 	animation: plataforma 2s ;
     animation-play-state: paused;
     animation-fill-mode: forwards;
@@ -1037,26 +1037,12 @@ animation: columnaT 2s ;
 	text-align: justify;
 	font-size: 22px !important;
 }
-.sombra{
-	animation: texto 6s infinite running;
-}
 .sombra2{
 	animation: sombra 6s infinite running;
 }
 .H1{
 	cursor: pointer;
-	animation: botonc 2s ;
-    animation-play-state: paused;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-@keyframes botonc{
-	0%{
-		opacity: 0;
-	}
-	100%{
-		opacity: 1;
-	}
+	animation: sombra 6s infinite running;
 }
 .H2{
 	cursor: pointer;
@@ -1076,7 +1062,7 @@ animation: columnaT 2s ;
 	z-index: 3;
 	width: 100%;
 	overflow: hidden;
-	height: 26%;
+	height: 29%;
 	position: absolute;
 	top: 0;
 	animation: banderas 2s ;
@@ -1098,7 +1084,7 @@ animation: columnaT 2s ;
  position: absolute;
  background-image: url("../img/banderani.png");
  animation: bandera 1s steps(2) infinite running;
- top: 60%;
+ top: 58%;
  right: 47%;
  cursor: pointer;
 }

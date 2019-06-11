@@ -338,7 +338,6 @@ $('.columna1').css('animationPlayState','running' );	}
 	setInterval(colm1, 100);
 }if (scrollLeft >1000) {
 	function israel() {
-$('.H1').css('animationPlayState','running' );
 $('.temploisrael').css('animationPlayState','running' );}
 	setInterval(israel, 100);
 }if (scrollLeft >1400) {

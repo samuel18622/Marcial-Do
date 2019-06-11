@@ -24,7 +24,6 @@ mysqli_close($link);
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
-
 		<section class="M-Do">
 		<div class="logo">
 			<video src="video/video.mp4" autoplay muted ></video>
@@ -34,6 +33,10 @@ mysqli_close($link);
 			<a href="php/login.php" class="btn BB ini">ingresar</a>
 			<a href="contacto.php" class="btn BT C fijo">C</a>
 			<a href="registro.php" class="btn BB R in">R</a>
+
+			<div class="saludo"></div>
+			<div class="perga"></div>
+
 		<article class="informacion">
 			<h3><?php echo $row["Texto"]; ?>			
 			</h3>
@@ -49,7 +52,7 @@ mysqli_close($link);
 		<article class="informacion i2"><div class="leecam"></div>
 			<h3>Para comenzar ésta grandiosa aventura por el tiempo recuerda avanzar con la flecha en dirección hacia la derecha y para retroceder con la flecha en dirección izquierda			
 			</h3>
-			<div class="dire"><img src="img/fle.png"></div>
+			<div class="dire"></div>
 			<button class="boton b6">Comenzar</button>
 		</article>
 	</section>
@@ -65,22 +68,109 @@ mysqli_close($link);
 			<div class="LShans"></div>
 				<div class="objeto1 nube"><img src="img/nube1.png"></div>
 				<div class="objeto2 nube"><img src="img/nube2.png"></div>
-				
+				<div class="objeto3 nube"><img src="img/nube3.png"></div>
 				<div class="objeto4 nube"><img src="img/nube4.png"></div>
+				<div class="objeto5 nube"><img src="img/nube5.png"></div>
+				<div class="objeto6 nube"><img src="img/nube6.png"></div>
+				<div class="objeto7 nube"><img src="img/nube7.png"></div>
+				<div class="objeto8 nube"><img src="img/nube8.png"></div>
 			
-    <!--año 23aC-->
-	
-	<section class="contenedorFecha">
-		<h1>Año 23 a.C</h1>
-		<div class="dojoJapones">
-		</div>
-		<section class="ventana">
-			<button class="btnSalir b2">X</button>
-			<div class="animacion23aC">
-				<video src="video/animacion.mp4" controls muted width="100%"></video>
+<!--Ventanas-->
+    
+    <article  class="texto1970" >
+			<div class="contenido">
+				<button class="btnSalir S3">X</button>
+			<img class="i1970" src="<?php echo $row2['imagen']; ?>" width="100%">
+			<p class="tex2" style="font-size: 15pt;">
+			<?php echo $row2["Texto"]; ?>
+            </p>
+            </div>
+            <button class="boton vmas">Ver más</button>
+            <button class="boton an1970">Animación</button>
+		</article>
+		<section class="ventana2 ani1970">
+			<button class="btnSalir salir">X</button>
+			<div class="animacion"><video src="video/animacion2.mp4" controls muted width="100%"></video></div>
+		</section>
+
+<!--Ventanas-->
+
+    <section class="SecHistorieta">
+			<button class="btnSalir S1">X</button>
+		<div class="flecha1 n1"><i class="far fa-arrow-alt-circle-up"></i></div>
+
+		<section class="historieta">
+			<div class="a1944">
+			<div>
+			<img src="img/pa_1944.jpg" width="100%" height="100%"></div>
+			<div><button class="btn BM more m2"></button>
+				<article class="sinop sin2">Un monje a una aldea de China y les enseña a los que estaban allí un sistema oficial de lucha y defensa para que tuvieran algunas técnicas para defenderse en el momento en que lo necesiten.<br> <button class="m2  BS">salir</button></article>
+			<img src="img/his_1.jpg" width="100%" height="100%"></div>
+			<div><button class="btn BM more m3"></button>
+				<article class="sinop sin3">El monje se va. Tiempo después 2 jóvenes de la aldea deciden viajar porque se encuentran en guerra con otra comunidad, y deciden que en el camino van a transmitir el conocimiento que tiempo les dieron los monjes chinos. <br><button class="m3 BS">salir</button></article>
+			<img src="img/his_2.jpg" width="100%" height="100%"></div>
+			<div><button class="btn BM more m4"></button>
+				<article class="sinop sin4">Los jóvenes en su camino se encuentran al comandante de las fuerzas de defensa y seguridad de Israel, y le enseñan el sistema oficial de lucha y defensa. <br><button class="m4 BS">salir</button></article>
+			<img src="img/his_3.jpg" width="100%" height="100%"></div>
+			<div><button class="btn BM more m5"></button>
+				<article class="sinop sin5">Se hace de noche y el comandante les da las gracias a los jóvenes y se va para su cuartel y los jóvenes siguen su camino. <br><button class="m5 BS">salir</button></article>
+			<img src="img/his_4.jpg" width="100%" height="100%"></div>
+			<div><button class="btn BM more m6"></button>
+				<article class="sinop sin6">El comandante llega al cuartel y les enseña a sus soldados el sistema.<br> <button class="m6 BS">salir</button></article>
+			<img src="img/his_5.jpg" width="100%" height="100%"></div>
+			<div><button class="btn BM more m7"></button>
+				<article class="sinop sin7"> Los soldados practican lo enseñado y se dan de cuenta que este sistema les servirá demasiado en sus misiones. <br><button class="m7 BS">salir</button></article>
+			<img src="img/his_6.jpg" width="100%" height="100%"></div>
+			<div><button class="btn BM more m8"></button>
+				<article class="sinop sin8">Jovenes practican el Wushu en China, siguiendo los movimientos de su gran maestro. <br><button class="m8 BS">salir</button></article>
+			<img src="img/his_7.jpg" width="100%" height="100%"></div>
+			<div><button class="btn BM more m9"></button>
+				<article class="sinop sin9">Dos maestros hacen una presentación del Wushu formalmente como un deporte ante el gobierno. <br><button class="m9 BS">salir</button></article>
+			<img src="img/his_8.jpg" width="100%" height="100%"></div>
+			<div><button class="btn BM more m10"></button>
+				<article class="sinop sin10">Dos jovenes participan en una competición organizada en tokio.<br> <button class="m10 BS">salir</button></article>
+			<img src="img/his_9.jpg" width="100%" height="100%"></div>
 			</div>
-	</section>
-		<section id="af23" class="ventanatexto">
+		</section>
+			<div class="flecha2 n2"><i class="far fa-arrow-alt-circle-down"></i></div>
+			</section>
+<!--Ventanas-->
+<section class="SecHistorieta2">
+			<button class="btnSalir S2">X</button>
+		<div class="flecha1 f1"><i class="far fa-arrow-alt-circle-up"></i></div>
+		
+		<section  class="historieta">
+			<div class="a1950">
+			<div>
+			<img src="img/pa_1950.jpg" width="100%" height="100%"></div>
+			<div><button class="btn BM more M2"></button>
+				<article class="sinop Sin2">Jovenes practican el Wushu en China, siguiendo los movimientos de su gran maestro San Mura. <br><button class="M2 BS">salir</button></article>
+			<img src="img/his1.jpg" width="100%" height="100%"></div>
+			<div><button class="btn BM more M3"></button>
+				<article class="sinop Sin3">San Mura lee una carta que le llega y se alegra por lo que dice en ella. <br> <button class="M3 BS">salir</button></article>
+			<img src="img/his2.jpg" width="100%" height="100%"></div>
+			<div><button class="btn BM more M4"></button>
+				<article class="sinop Sin4">San Mura llega al festival y se pone alegre al ver el espectáculo tan grandioso que hay. <br><button class="M4 BS">salir</button></article>
+			<img src="img/his3.jpg" width="100%" height="100%"></div>
+			<div><button class="btn BM more M5"></button>
+				<article class="sinop Sin5">San  Mura se monta en una tarima y empieza a realizar su debut del Wushu ante la multitud y el gobierno como un deporte más. <br><button class="M5 BS">salir</button></article>
+			<img src="img/his4.jpg" width="100%" height="100%"></div>
+			<div><button class="btn BM more M6"></button>
+				<article class="sinop Sin6">Un representante del gobierno acepta al Wushu como un deporte más anotandolo en los datos de los deportes.<br><button class="M6 BS">salir</button></article>
+			<img src="img/his5.jpg" width="100%" height="100%"></div>
+			<div><button class="btn BM more M7"></button>
+				<article class="sinop Sin7">Dos jóvenes participan en una competición organizada en Tokio días después  del festival.<br> <button class="M7 BS">salir</button></article>
+			<img src="img/his6.jpg" width="100%" height="100%"></div>
+			</div>
+		</section>
+		<div class="flecha2 f2"><i class="far fa-arrow-alt-circle-down"></i></div>
+		</section>
+
+
+
+<!--Ventanas-->
+
+		<section class="ventanatexto">
 			<div class="texto23ac p_23aC">
 				<img src="<?php echo $row1['imagen']; ?>" width="100%">
 				<div></div>
@@ -94,8 +184,21 @@ mysqli_close($link);
                 </p>
                 <button class="boton ani23aC">Animación</button>
                 </article>
-			
 	</section>
+
+<!--año 23aC-->
+	<section class="contenedorFecha">
+		<h1 class="nnnn">Año 23 a.C</h1>
+		<div class="dojoJapones">
+			<img src="img/dojo.png">
+		</div>
+		<section class="ventana">
+			<button class="btnSalir b2">X</button>
+			<div class="animacion23aC">
+				<video src="video/animacion.mp4" controls muted width="100%"></video>
+			</div>
+	</section>
+		
 	<div class="casita1"><img src="img/casita1.png"> </div>
 	<div class="casita2"><img src="img/casita2.png"></div>
 	</section>
@@ -104,51 +207,10 @@ mysqli_close($link);
     <!--año 1944-->
 
 	<section class="contenedorFecha">
-		<div class="objeto1 nube"><img src="img/nube1.png"></div>
-				<div class="objeto2 nube"><img src="img/nube2.png"></div>
-		<h1 class="f1944">Año 1944</h1>
-		
+				
+		<h1 class="nnnn">Año 1944</h1>
 		<div class="btn BB H1">Historieta</div>
-		<div class="objeto3 nube"><img src="img/nube3.png"></div>
-		<section class="SecHistorieta">
-			<button class="btnSalir S1">X</button>
-		<div class="flecha1 n1"><i class="far fa-arrow-alt-circle-up"></i></div>
-
-		<section id="af1944" class="historieta">
-			<div class="a1944">
-			<div>
-			<img src="img/pa_1944.jpg" width="100%" height="100%"></div>
-			<div><button class="btn BM more m2"><img src="img/icono.png" width="100%"></button>
-				<article class="sinop sin2">Un monje a una aldea de China y les enseña a los que estaban allí un sistema oficial de lucha y defensa para que tuvieran algunas técnicas para defenderse en el momento en que lo necesiten.<br> <button class="m2  BS">salir</button></article>
-			<img src="img/his_1.jpg" width="100%" height="100%"></div>
-			<div><button class="btn BM more m3"><img src="img/icono.png" width="100%"> </button>
-				<article class="sinop sin3">El monje se va. Tiempo después 2 jóvenes de la aldea deciden viajar porque se encuentran en guerra con otra comunidad, y deciden que en el camino van a transmitir el conocimiento que tiempo les dieron los monjes chinos. <br><button class="m3 BS">salir</button></article>
-			<img src="img/his_2.jpg" width="100%" height="100%"></div>
-			<div><button class="btn BM more m4"><img src="img/icono.png" width="100%"> </button>
-				<article class="sinop sin4">Los jóvenes en su camino se encuentran al comandante de las fuerzas de defensa y seguridad de Israel, y le enseñan el sistema oficial de lucha y defensa. <br><button class="m4 BS">salir</button></article>
-			<img src="img/his_3.jpg" width="100%" height="100%"></div>
-			<div><button class="btn BM more m5"><img src="img/icono.png" width="100%"> </button>
-				<article class="sinop sin5">Se hace de noche y el comandante les da las gracias a los jóvenes y se va para su cuartel y los jóvenes siguen su camino. <br><button class="m5 BS">salir</button></article>
-			<img src="img/his_4.jpg" width="100%" height="100%"></div>
-			<div><button class="btn BM more m6"><img src="img/icono.png" width="100%"> </button>
-				<article class="sinop sin6">El comandante llega al cuartel y les enseña a sus soldados el sistema.<br> <button class="m6 BS">salir</button></article>
-			<img src="img/his_5.jpg" width="100%" height="100%"></div>
-			<div><button class="btn BM more m7"><img src="img/icono.png" width="100%"> </button>
-				<article class="sinop sin7"> Los soldados practican lo enseñado y se dan de cuenta que este sistema les servirá demasiado en sus misiones. <br><button class="m7 BS">salir</button></article>
-			<img src="img/his_6.jpg" width="100%" height="100%"></div>
-			<div><button class="btn BM more m8"><img src="img/icono.png" width="100%"> </button>
-				<article class="sinop sin8">Jovenes practican el Wushu en China, siguiendo los movimientos de su gran maestro. <br><button class="m8 BS">salir</button></article>
-			<img src="img/his_7.jpg" width="100%" height="100%"></div>
-			<div><button class="btn BM more m9"><img src="img/icono.png" width="100%"> </button>
-				<article class="sinop sin9">Dos maestros hacen una presentación del Wushu formalmente como un deporte ante el gobierno. <br><button class="m9 BS">salir</button></article>
-			<img src="img/his_8.jpg" width="100%" height="100%"></div>
-			<div><button class="btn BM more m10"><img src="img/icono.png" width="100%"> </button>
-				<article class="sinop sin10">Dos jovenes participan en una competición organizada en tokio.<br> <button class="m10 BS">salir</button></article>
-			<img src="img/his_9.jpg" width="100%" height="100%"></div>
-			</div>
-		</section>
-			<div class="flecha2 n2"><i class="far fa-arrow-alt-circle-down"></i></div>
-			</section>
+	
 			<div class="temploisrael">
 			<img class="templo" src="img/temploisrael.png" width="80%">
 		</div>
@@ -156,80 +218,27 @@ mysqli_close($link);
 		<div class="columna2"><img src="img/columna2.png"></div>
 	</section>
     <!--año 1950-->
-				<div class="objeto1 nube"><img src="img/nube1.png"></div>
-				<div class="objeto2 nube"><img src="img/nube2.png"></div>
-				<div class="objeto3 nube"><img src="img/nube3.png"></div>
-				<div class="objeto4 nube"><img src="img/nube4.png"></div>
 	<section class="contenedorFecha">
-		<h1 class="f1950">Año 1950</h1>
+		<h1 class="nnnn">Año 1950</h1>
+
 		<div class="btn BT H2">Historieta</div>
 		
-		<section class="SecHistorieta2">
-			<button class="btnSalir S2">X</button>
-		<div class="flecha1 f1"><i class="far fa-arrow-alt-circle-up"></i></div>
 		
-		<section id="af1950" class="historieta">
-			<div class="a1950">
-			<div>
-			<img src="img/pa_1950.jpg" width="100%" height="100%"></div>
-			<div><button class="btn BM more M2"><img src="img/icono.png" width="100%"> </button>
-				<article class="sinop Sin2">Jovenes practican el Wushu en China, siguiendo los movimientos de su gran maestro San Mura. <br><button class="M2 BS">salir</button></article>
-			<img src="img/his1.jpg" width="100%" height="100%"></div>
-			<div><button class="btn BM more M3"><img src="img/icono.png" width="100%"> </button>
-				<article class="sinop Sin3">San Mura lee una carta que le llega y se alegra por lo que dice en ella. <br> <button class="M3 BS">salir</button></article>
-			<img src="img/his2.jpg" width="100%" height="100%"></div>
-			<div><button class="btn BM more M4"><img src="img/icono.png" width="100%"> </button>
-				<article class="sinop Sin4">San Mura llega al festival y se pone alegre al ver el espectáculo tan grandioso que hay. <br><button class="M4 BS">salir</button></article>
-			<img src="img/his3.jpg" width="100%" height="100%"></div>
-			<div><button class="btn BM more M5"><img src="img/icono.png" width="100%"> </button>
-				<article class="sinop Sin5">San  Mura se monta en una tarima y empieza a realizar su debut del Wushu ante la multitud y el gobierno como un deporte más. <br><button class="M5 BS">salir</button></article>
-			<img src="img/his4.jpg" width="100%" height="100%"></div>
-			<div><button class="btn BM more M6"><img src="img/icono.png" width="100%"> </button>
-				<article class="sinop Sin6">Un representante del gobierno acepta al Wushu como un deporte más anotandolo en los datos de los deportes.<br><button class="M6 BS">salir</button></article>
-			<img src="img/his5.jpg" width="100%" height="100%"></div>
-			<div><button class="btn BM more M7"><img src="img/icono.png" width="100%"> </button>
-				<article class="sinop Sin7">Dos jóvenes participan en una competición organizada en Tokio días después  del festival.<br> <button class="M7 BS">salir</button></article>
-			<img src="img/his6.jpg" width="100%" height="100%"></div>
-			</div>
-		</section>
-		<div class="flecha2 f2"><i class="far fa-arrow-alt-circle-down"></i></div>
-		</section>
+		
 		<div class="casajaponesa">
-			<img class="casa " src="img/casa1.png" width="80%">
-			<img class="casa " src="img/casa2.png" width="80%">
-			<img class="casa " src="img/casa3.png" width="80%">
+			<img class="casa cas1 " src="img/casa1.png" width="80%">
+			<img class="casa cas2" src="img/casa2.png" width="80%">
+			<img class="casa cas3" src="img/casa3.png" width="80%">
 		</div>
 		<div class="cerca1"><img src="img/cerca1.png"></div>
 	</section>
     <!--año 1970-->
 
 	<section class="contenedorFecha">
-				<div class="objeto3 nube"><img src="img/nube3.png"></div>
-				<div class="objeto2 nube"><img src="img/nube2.png"></div>
-		<h1>Año 1970</h1>
-		<div href="#af1970" class="banderas">
+		<h1 class="nnnn">Año 1970</h1>
+		<div  class="banderas">
 		<img class="bandera1" src="img/banderas.png" width="100%">
 		<div  class="bandera"></div></div>
-		
-		<article id="af1970" class="texto1970" >
-			<div class="contenido">
-				<button class="btnSalir S3">X</button>
-			<img class="i1970" src="<?php echo $row2['imagen']; ?>" width="100%">
-			<p class="tex2" style="font-size: 15pt;">
-			<?php
-					
-					echo $row2["Texto"];
-					
-						?>
-            </p>
-            </div>
-            <button class="boton vmas">Ver más</button>
-            <button class="boton an1970">Animación</button>
-		</article>
-		<section class="ventana2 ani1970">
-			<button class="btnSalir salir">X</button>
-			<div class="animacion"><video src="video/animacion2.mp4" controls muted width="100%"></video></div>
-		</section>
 		<div class="temploJ">
 			<img class="temploJ" src="img/templo.png" width="80%">
 		</div>
@@ -238,22 +247,16 @@ mysqli_close($link);
 
 	<!--RA -->
 	<section class="contenedorFecha">
-		<div class="objeto1 nube"><img src="img/nube1.png"></div>
-				<div class="objeto2 nube"><img src="img/nube2.png"></div>
-				<div class="objeto4 nube"><img src="img/nube4.png"></div>
-		<h1>Realidad Aumentada</h1>
+		<h1 class="nnnn">Realidad Aumentada</h1>
 		<section class="NR"><div class="templos"><img src="img/templos.png" width="100%"></div>
 		<div class="plataforma"><img src="img/plataforma.png" width="100%"></div>
-		<div class="objetos"><img src="img/ra1.png"></div>
-		<div class="objetos"><img src="img/ra2.png"></div>
+		<div class="objetos"></div>
 	</section>
 	</section>
 	<!--Video juego-->
 	<section class="contenedorFecha Juego">
-
-				<div class="objeto2 nube"><img src="img/nube2.png"></div>
 				<div class="BJuego">
-		<h1 >Katarsis</h1></div>
+		<h1 class="nnnn">Katarsis</h1></div>
 		<div class="muralla">
 			<img class="muralla2 " src="img/muralla.png" width="80%">
 		</div>		
