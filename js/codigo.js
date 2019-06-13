@@ -54,11 +54,11 @@ $('.b6').click(function(){
 	function casa1() {
 $('.casita1').css('animationPlayState','running' );	}
 	
-	setInterval(casa1, 500);
+	setInterval(casa1, 150);
 	function Dojo() {
 $('.dojoJapones').css('animationPlayState','running' );	}
 	
-	setInterval(Dojo, 1500);
+	setInterval(Dojo, 600);
 
 });
 		$('.f1').on('click', function(e){
@@ -380,6 +380,15 @@ $('.cerca2').css('animationPlayState','running' );	}
 	function plataforma() {
 $('.plataforma').css('animationPlayState','running' );	}
 	setInterval(plataforma, 100);
+}if (scrollLeft >5400) {
+	function imgra() {
+$('.imagenRA').css('animationPlayState','running' );	}
+	setInterval(imgra, 100);
+}
+if (scrollLeft >5400) {
+	function textora() {
+$('.inforRA').css('animationPlayState','running' );	}
+	setInterval(textora, 100);
 }if (scrollLeft >5200) {
 	function temploschinos() {
 $('.templos').css('animationPlayState','running' );	}
@@ -388,6 +397,10 @@ $('.templos').css('animationPlayState','running' );	}
 	function muralla() {
 $('.muralla').css('animationPlayState','running' );	}
 	setInterval(muralla, 100);
+}if (scrollLeft >6500) {
+	function juegoin() {
+$('.inforjuego').css('animationPlayState','running' );	}
+	setInterval(juegoin, 100);
 }
 if(scrollLeft > 99880) {
 	$('.LShan').fadeOut('fast').css('display','none');

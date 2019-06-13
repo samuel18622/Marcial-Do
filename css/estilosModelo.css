@@ -112,10 +112,10 @@ body{
 	text-align:center;
 }
 .b2{
-	font-size: 80% !important;
+	font-size: 180% !important;
 }
 .b2:hover{
-	font-size: 82% !important;
+	font-size: 200% !important;
 }
 .S1{
 	top: 10px;
@@ -207,7 +207,7 @@ body{
 	position: absolute;
 	left: 10%;
 	top: 8vh;
-	width: 398.2px;
+	width: 400px;
 	height: 553px;
 	background-image: url("../img/Leesaludo.png");
     animation: playsaludo 1s steps(9) infinite running;
@@ -218,7 +218,7 @@ body{
 }
 @keyframes playsaludo{
 	100%{
-		background-position: -3584px top;
+		background-position: -3600px top;
 	}
 }
 .informacion{
@@ -402,7 +402,7 @@ body{
 	height: 202px;
 	z-index: 5;
 	background: url(../img/spriteC.png);
-	margin-top: 26%;
+	margin-top: 29%;
 	margin-left: 6%;
 	position: fixed;
 	animation: LeeShan 1s steps(9) infinite running;
@@ -413,7 +413,7 @@ body{
 	height: 202px;
 	z-index: 5;
 	background: url(../img/spriteC2.png);
-	margin-top: 26%;
+	margin-top: 29%;
 	margin-left: 6%;
 	position: fixed;
 	animation: LeeShans 1s steps(9) infinite running;
@@ -425,7 +425,7 @@ body{
 	height: 202px;
 	background: url(../img/spriteL.png);
 	z-index: 5;
-	margin-top: 26%;
+	margin-top: 29%;
 	margin-left: 6%;
 	position: fixed;
 }
@@ -567,7 +567,93 @@ body{
 		left: 8000px;
 	}
 }
-/**/
+/*ventana RA*/
+.imagenRA{
+	width: 20%;
+    overflow: hidden;
+    position: absolute;
+    top: 6%;
+    z-index: 4;
+    right: 18%;
+	animation: imgra 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes imgra{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.inforRA{
+	width: 28%;
+	padding: 2%;
+    position: absolute;
+    top: 18%;
+    border-radius: 15%;
+    background-color: rgba(255,255,255,0.8);
+    height: 40vh;
+    left: 15%;
+    z-index: 5;
+	animation: infora 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes infora{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.inforRA p{
+ 	margin-top: 2%;
+ 	font-size: 0.5em;
+ 	width: 95%;
+ }
+/*ventana juego*/
+.inforjuego{
+	width: 40%;
+    height: 60vh;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8%;
+	animation: injuego 2s ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes injuego{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+ .inforjuego p{
+ 	margin-top: 2%;
+ 	font-size: 0.5em;
+ 	width: 60%;
+ }
+.kata{
+	width: 25%;
+}
+.juegob a{
+	color: white !important;
+}
+.juegob a:hover{
+	color: rgb(223,19,6) !important;
+	opacity: 0.9;
+}
+/*otros*/
 .e{
 	text-align: center;
 	position: fixed;
@@ -836,7 +922,7 @@ animation: columnaT 2s ;
 	color: white;
 	font-size: 75%;
 }
-.nnnn{animation: texto 6s infinite running;
+.nnnn{animation: texto 7s infinite running;
 }
 @keyframes texto{
 	0%{
@@ -884,10 +970,10 @@ animation: columnaT 2s ;
 	}
 }
 .ventana{
-	position: absolute;
+	position: fixed;
 	background-color:rgba(00,00,00,0.8);
 	top: -1000px;
-	width: 86%;
+	width: 100%;
 	height: 100vh;
 	z-index: 8;
 }
@@ -904,13 +990,12 @@ animation: columnaT 2s ;
     padding: 15px;
     overflow: hidden;
 	cursor: pointer;
-	animation: Dojo 4s;
+	animation: Dojo 3s;
 	animation-play-state: paused;
 	z-index: 3;
 }
 .dojoJapones img{
-	filter: drop-shadow(5px 5px 10px white);
-/*animation: sombraa 6s infinite running;*/
+	animation: sombraa 2.5s infinite running;
 }
 @keyframes Dojo{
 	0%{
@@ -1037,16 +1122,13 @@ animation: columnaT 2s ;
 	text-align: justify;
 	font-size: 22px !important;
 }
-.sombra2{
-	animation: sombra 6s infinite running;
-}
 .H1{
 	cursor: pointer;
-	animation: sombra 6s infinite running;
+	animation: sombra 2.5s infinite running;
 }
 .H2{
 	cursor: pointer;
-	animation: sombra 6s infinite running;
+	animation: sombra 2.5s infinite running;
 }
 @keyframes botonh{
 	0%{
