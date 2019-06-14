@@ -26,11 +26,12 @@ mysqli_close($link);
 <body>
 		<section class="M-Do">
 		<div class="logo">
+			<h1 class="click">Click</h1>
 			<video src="video/video.mp4" autoplay muted ></video>
 		</div>
 		</section>
 		<section class="inicio vIni N1">
-			<a href="php/login.php" class="btn BB ini">ingresar</a>
+			<a href="php/login.php" class="btn BB ini">Ingresar</a>
 			<a href="contacto.php" class="btn BT C fijo">C</a>
 			<a href="registro.php" class="btn BB R in">R</a>
 
@@ -45,9 +46,6 @@ mysqli_close($link);
 		</article>
 	</section>
 	<section class="infor vIni">
-			<a href="php/login.php" class="btn BB ini">ingresar</a>
-			<a href="contacto.php" class="btn BT C fijo">C</a>
-			<a href="registro.php" class="btn BB R in">R</a>
 			
 		<article class="informacion i2"><div class="leecam"></div>
 			<h3>Para comenzar ésta grandiosa aventura por el tiempo recuerda avanzar con la flecha en dirección hacia la derecha y para retroceder con la flecha en dirección izquierda			
@@ -58,9 +56,7 @@ mysqli_close($link);
 	</section>
 
 	<section id="contenedorMayor">
-		<a href="php/login.php" class="btn BB fijo">ingresar</a>
-		<a href="contacto.php" class="btn BT fijo C">C</a>
-			<a href="registro.php" class="btn BT fijo R">R</a>
+		
 			<div class="LShanP">
 			</div>
 			<div class="LShan">
@@ -211,7 +207,7 @@ mysqli_close($link);
 	<section class="contenedorFecha">
 				
 		<h1 class="nnnn">Año 1944</h1>
-		<div class="btn BB H1">Historieta</div>
+		<div class="btn BT H1">Historieta</div>
 	
 			<div class="temploisrael">
 			<img class="templo" src="img/temploisrael.png" width="80%">
@@ -221,9 +217,9 @@ mysqli_close($link);
 	</section>
     <!--año 1950-->
 	<section class="contenedorFecha">
-		<h1 class="nnnn">Año 1950</h1>
+		<h1 class="nnnn kataa">Año 1950</h1>
 
-		<div class="btn BT H2">Historieta</div>
+		<div class="btn BT H2 kataa">Historieta</div>
 		
 		
 		
@@ -253,23 +249,28 @@ mysqli_close($link);
 		<section class="NR"><div class="templos"><img src="img/templos.png" width="100%"></div>
 		<div class="plataforma"><img src="img/plataforma.png" width="100%"></div>
 		<div class="imagenRA">
-			<img src="img/marcador2.png" width="100%">
+			<img src="img/cinturon.png" width="100%">
 		</div>
 		<div class="inforRA">
-			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,</p>
+			<p>Para ver la magia de la realidad aumentada por favor sigue los siguientes pasos:<br>
+			•Descarga el siguiente APK e instálalo en tu móvil.<br>
+			•Hecho ésto escanea con la cámara de tu celular el cinturón blanco que aparece en la pantalla.<br>
+			•Por último cuando aparezcan los cinturones, da click en cada uno y listo.<br>
+				¡¡Aprende y déjate sorprender!!</p>
+				<a class="BT btn" href="realidadCinturones2.apk" download>Descargar APK</a>
 		</div>
 	</section>
 	</section>
 	<!--Video juego-->
 	<section class="contenedorFecha Juego">
-		<h1 class="nnnn"><a class="BJuego">Katarsis</a></h1>
+		<h1 class="nnnn kataa">Katarsis</h1>
 		<div class="muralla">
 			<img class="muralla2 " src="img/muralla.png" width="80%">
 		</div>
 		<article class="inforjuego">
 			<img class="kata" src="img/logokata.png">
-			<p>Acompañanos a recolectar los animales y cinturones de las artes marciales en el juego Katarsis, ven y diviertete en esta gran aventura.</p>
-	<div class="btn BB "><a href="Katarsis/index.html" target="_blank"> ir al juego</a></div>
+			<p>Acompañanos a recolectar todos los animales y cinturones de las artes marciales en el juego Katarsis, ven y diviertete en esta gran aventura.</p>
+	<div class="btn BB juegob"><a href="Katarsis/index.html" target="_blank"> Ir al juego</a></div>
 		</article>		
 	</section>
 	</section>

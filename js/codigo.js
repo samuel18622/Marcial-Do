@@ -58,7 +58,7 @@ $('.casita1').css('animationPlayState','running' );	}
 	function Dojo() {
 $('.dojoJapones').css('animationPlayState','running' );	}
 	
-	setInterval(Dojo, 600);
+	setInterval(Dojo, 300);
 
 });
 		$('.f1').on('click', function(e){
@@ -380,12 +380,12 @@ $('.cerca2').css('animationPlayState','running' );	}
 	function plataforma() {
 $('.plataforma').css('animationPlayState','running' );	}
 	setInterval(plataforma, 100);
-}if (scrollLeft >5400) {
+}if (scrollLeft >6300) {
 	function imgra() {
 $('.imagenRA').css('animationPlayState','running' );	}
 	setInterval(imgra, 100);
 }
-if (scrollLeft >5400) {
+if (scrollLeft >6200) {
 	function textora() {
 $('.inforRA').css('animationPlayState','running' );	}
 	setInterval(textora, 100);
@@ -393,11 +393,11 @@ $('.inforRA').css('animationPlayState','running' );	}
 	function temploschinos() {
 $('.templos').css('animationPlayState','running' );	}
 	setInterval(temploschinos, 100);
-}if (scrollLeft >6200) {
+}if (scrollLeft >7200) {
 	function muralla() {
 $('.muralla').css('animationPlayState','running' );	}
 	setInterval(muralla, 100);
-}if (scrollLeft >6500) {
+}if (scrollLeft >7700) {
 	function juegoin() {
 $('.inforjuego').css('animationPlayState','running' );	}
 	setInterval(juegoin, 100);
